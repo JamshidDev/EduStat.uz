@@ -35,7 +35,7 @@ const removeImage = (id)=>{
 </script>
 
 <template>
-<div class="w-full flex gap-2">
+<div class="w-full flex gap-2 flex-wrap">
   <template v-for="(item, idx) in model" :key="idx">
     <div
         class="w-[100px] h-[100px] border border-surface-line rounded overflow-hidden relative"

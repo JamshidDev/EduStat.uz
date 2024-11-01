@@ -76,4 +76,12 @@ export default [
         isNew:false,
         flag:'New',
     },
+    {
+        label:'navigation.brand',
+        icon:'bx bx-folder',
+        path:`${AppPaths.Admin}${AppPaths.Brand}`,
+        visible:true,
+        isNew:false,
+        flag:'New',
+    },
 ]

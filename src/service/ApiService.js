@@ -4,6 +4,7 @@ import accountService from "@/service/v1/accountService.js";
 import categoryService from "@/service/v1/categoryService.js";
 import generalService from "@/service/v1/generalService.js";
 import productService from "@/service/v1/productService.js";
+import brandService from "@/service/v1/brandService.js";
 
 export default {
     authService,
@@ -11,4 +12,5 @@ export default {
     categoryService,
     generalService,
     productService,
+    brandService,
 }

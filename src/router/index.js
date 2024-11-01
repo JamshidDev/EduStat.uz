@@ -5,12 +5,13 @@ import LoginPage from "@/pages/login/LoginPage.vue"
 import NotFoundPage from "@/pages/notFound/NotFoundPage.vue"
 import RegisterPage from "@/pages/register/RegisterPage.vue";
 import ServiceLayout from "@/layouts/Organization/Service/ServiceLayout.vue";
-import MainLayout from "@/layouts/Main/MainLayout.vue";
 import VerificationEmailPage from "@/pages/verificationEmail/VerificationEmailPage.vue"
 import DashboardPage from "@/pages/dashboard/DashboardPage.vue";
 import CategoryPage from "@/pages/category/CategoryPage.vue";
 import ClientPage from "@/pages/client/clientPage.vue";
 import ProductPage from "@/pages/product/ProductPage.vue";
+import BrandPage from "@/pages/brand/BrandPage.vue"
+
 import {AppPaths} from "@/utils/index.js";
 
 const beforeLogin = (to, from, next) => {
@@ -29,14 +30,14 @@ const beforeLogin = (to, from, next) => {
 const routes = [
     {
         path:AppPaths.Main,
-        component:MainLayout,
         beforeEnter: beforeLogin,
         redirect: AppPaths.Admin,
+
     },
     {
         path:AppPaths.Admin,
         name:AppPaths.Admin.substring(1),
-        component:MainLayout,
+        redirect: `${AppPaths.Admin}${AppPaths.Dashboard}`,
         beforeEnter: beforeLogin,
         children: [
             {
@@ -58,6 +59,11 @@ const routes = [
                 path:`${AppPaths.Admin}${AppPaths.Product}`,
                 name:AppPaths.Product.substring(1),
                 component:ProductPage,
+            },
+            {
+                path:`${AppPaths.Admin}${AppPaths.Brand}`,
+                name:AppPaths.Brand.substring(1),
+                component:BrandPage,
             }
         ]
     },

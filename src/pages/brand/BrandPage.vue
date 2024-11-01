@@ -1,10 +1,10 @@
 <script setup>
 import {UIPageContent, UIPageFilter, UIDrawer} from "@/components/index.js"
-import {useProductStore, useComponentStore} from "@/store/modules/index.js"
+import {useBrandStore, useComponentStore} from "@/store/modules/index.js"
 import Table from "./ui/Table.vue"
-import createForm from "./ui/createFrom.vue"
+import createForm from "./ui/createForm.vue"
 
-const store = useProductStore()
+const store = useBrandStore()
 const componentStore = useComponentStore()
 
 const onAdd = ()=>{
@@ -14,7 +14,7 @@ const onAdd = ()=>{
 }
 
 onMounted(()=>{
-  store._index()
+  // store._index()
 })
 </script>
 
@@ -29,7 +29,7 @@ onMounted(()=>{
     <Table/>
     <UIDrawer
         v-model:visible="store.visible"
-        :title="store.visibleType? $t('productPage.createTitle') : $t('productPage.updateTitle')"
+        :title="store.visibleType? $t('brandPage.createTitle') : $t('brandPage.updateTitle')"
     >
       <template #content>
         <createForm/>

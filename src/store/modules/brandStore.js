@@ -2,7 +2,7 @@ import i18n from "../../i18n/index.js"
 const {t} = i18n.global
 
 
-export const useProductStore = defineStore('productStore', {
+export const useBrandStore = defineStore('brandStore', {
     state:()=>({
         list:[],
         totalItems:0,
@@ -18,14 +18,10 @@ export const useProductStore = defineStore('productStore', {
             size:10,
         },
         payload:{
-            images:[],
+            store_id:'tpgF7UfNd6RN4e62TawtU6',
+            image:[],
             name:null,
             description:null,
-            category:null,
-            brand:null,
-            remains:null,
-            price:null,
-            variants:[],
         },
 
     }),
@@ -35,7 +31,7 @@ export const useProductStore = defineStore('productStore', {
     actions:{
         _index(){
             this.loading = true
-            $ApiService.productService._index({params:this.params}).then((res)=>{
+            $ApiService.brandService._index({params:this.params}).then((res)=>{
                 this.list = res.data.items
                 this.totalItems = res.data.total
             }).finally(()=>{
@@ -43,10 +39,9 @@ export const useProductStore = defineStore('productStore', {
             })
         },
 
-        _create(){
+        _create(data){
             this.saveLoading = true
-             let data = this.payload
-            $ApiService.productService._create({data}).then((res)=>{
+            $ApiService.brandService._create({data}).then((res)=>{
                 this._index()
             }).finally(()=>{
                 this.saveLoading = false
@@ -56,7 +51,7 @@ export const useProductStore = defineStore('productStore', {
             this.saveLoading = true
             const id = this.elementId
             let data = this.payload
-            $ApiService.productService._update({data, id}).then((res)=>{
+            $ApiService.brandService._update({data, id}).then((res)=>{
                 this._index()
             }).finally(()=>{
                 this.saveLoading = false
@@ -65,7 +60,7 @@ export const useProductStore = defineStore('productStore', {
         _delete(){
             this.deleteLoading = true
             const id = this.elementId
-            $ApiService.productService._delete({id}).then((res)=>{
+            $ApiService.brandService._delete({id}).then((res)=>{
                 this._index()
             }).finally(()=>{
                 this.deleteLoading = false
@@ -79,12 +74,7 @@ export const useProductStore = defineStore('productStore', {
             this.elementId = null
             this.payload.name = null
             this.payload.description = null
-            this.payload.category = null
-            this.payload.remains = null
-            this.payload.brand = null
-            this.payload.category = null
-            this.payload.price = null
-            this.payload.variants = []
+            this.payload.image = []
         },
 
 

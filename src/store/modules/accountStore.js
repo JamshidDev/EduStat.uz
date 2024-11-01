@@ -7,7 +7,7 @@ export const useAccountStore = defineStore('accountStore', {
     actions:{
         _account(){
             $ApiService.accountService._getAccount({data:this.payload}).then((res)=>{
-                console.log(res.data)
+                this.account = res.data
             })
         }
     }

@@ -36,7 +36,8 @@
     "navigation": {
         "client": "Mijozlar",
         "product": "Mahsulotlar",
-        "category": "Kategoriyalar"
+        "category": "Kategoriyalar",
+        "brand": "Brendlar"
     },
 
     "loginPage":{
@@ -75,6 +76,39 @@
             "successUpdate": "Kategoriya yangilandi"
         }
     },
+    "productPage": {
+        "createTitle": "Mahsulot qo'shish",
+        "updateTitle": "Mahsulotni tahrirlash",
+        "form": {
+            "name": "Mahsulot nomi",
+            "category": "Kategoriyani tanlang",
+            "photo": "Mahsulot uchun rasm yuklang. Rasm o'lchami 128x128 px bo'lishi tavsiya qilinadi.",
+            "description": "Tavsif yozing",
+            "create": "Yangi kategoriya qo'shish",
+            "update": "Kategoriyani tahrirlash"
+        },
+        "toast": {
+            "successCreate": "Yangi kategoriya qo'shildi",
+            "successUpdate": "Kategoriya yangilandi"
+        }
+    },
+    "brandPage": {
+        "createTitle": "Brend qo'shish",
+        "updateTitle": "Brendni tahrirlash",
+        "form": {
+            "name": "Brend nomi",
+            "category": "Kategoriyani tanlang",
+            "photo": "Brand uchun rasm yuklang. Rasm o'lchami 128x128 px bo'lishi tavsiya qilinadi.",
+            "description": "Tavsif yozing",
+            "create": "Yangi kategoriya qo'shish",
+            "update": "Kategoriyani tahrirlash"
+        },
+        "toast": {
+            "successCreate": "Yangi kategoriya qo'shildi",
+            "successUpdate": "Kategoriya yangilandi"
+        }
+    },
+
 
     "service": {
         "step": {

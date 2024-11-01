@@ -9,4 +9,5 @@ export const AppPaths = {
     VerificationEmail:'/verification-email',
     RegisterService:"/register-service",
     Client:"/client",
+    Brand:"/brand",
 }
