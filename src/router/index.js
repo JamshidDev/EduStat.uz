@@ -11,6 +11,7 @@ import CategoryPage from "@/pages/category/CategoryPage.vue";
 import ClientPage from "@/pages/client/clientPage.vue";
 import ProductPage from "@/pages/product/ProductPage.vue";
 import BrandPage from "@/pages/brand/BrandPage.vue"
+import {AppLayouts} from "@/utils/index.js";
 
 import {AppPaths} from "@/utils/index.js";
 
@@ -71,7 +72,9 @@ const routes = [
         path:AppPaths.Register,
         name:AppPaths.Register.substring(1),
         component:RegisterPage,
-        children:[]
+        meta:{
+            layout:AppLayouts.empty
+        }
     },
     {
         path:AppPaths.VerificationEmail,
@@ -89,6 +92,9 @@ const routes = [
         path:AppPaths.Login,
         name:AppPaths.Login.substring(1),
         component:LoginPage,
+        meta:{
+            layout:AppLayouts.empty
+        }
     },
     {
         path: "/:pathMatch(.*)*",
