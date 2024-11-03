@@ -23,8 +23,7 @@ const onSubmit = () => {
 
 <template>
   <div class="flex justify-center items-center h-screen
-  bg-no-repeat bg-cover bg-center bg-surface-ground
-  login-page-bg
+  bg-no-repeat bg-cover bg-center bg-surface-ground gradient-v1
 ">
 
 
@@ -115,24 +114,3 @@ const onSubmit = () => {
 
   </div>
 </template>
-<style lang="scss">
-.login-page-bg {
-  background: radial-gradient(
-          farthest-side at top left,
-          rgba(113, 239, 229, 0.7),
-          transparent
-  ),
-  radial-gradient(
-          farthest-side at bottom right,
-          rgba(113, 239, 229, 0.7),
-          transparent
-  ),
-  radial-gradient(
-          farthest-corner at center center,
-          rgba(0, 89, 255, 0.75),
-          transparent
-  );
-
-
-}
-</style>

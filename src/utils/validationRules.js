@@ -37,7 +37,7 @@ export default {
         },
     },
     verificationEmail:{
-        verificationCode:{
+        code:{
             required: true,
             message: t(`rules.requiredField`),
             trigger: ['input', 'blur']

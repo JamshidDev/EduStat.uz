@@ -10,6 +10,13 @@ export const useRegisterStore = defineStore('registerStore', {
             last_name:null,
         },
         loading:false,
+        activeTab:2,
+        tabList:[1,2],
+        verificationPayload:{
+            email:null,
+            code:null,
+        },
+        verificationLoading:false,
 
 
     }),
