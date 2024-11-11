@@ -33,12 +33,12 @@ const layoutClass = computed(()=>{
   return data
 })
 
-onBeforeMount(()=>{
-  initialApp()
-})
-onMounted(()=>{
-  initialMountApp()
-})
+// onBeforeMount(()=>{
+//   initialApp()
+// })
+// onMounted(()=>{
+//   initialMountApp()
+// })
 </script>
 
 <template>
