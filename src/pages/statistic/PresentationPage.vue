@@ -3,6 +3,7 @@ import AppHeader from "@/pages/statistic/ui/AppHeader.vue"
 import AppBanner from "@/pages/statistic/ui/AppBanner.vue"
 import {regionData} from "@/pages/statistic/resource/data.js"
 import ZoomContainer from "@/pages/statistic/ui/zoomContainer.vue"
+import KhorezmMap from "@/pages/statistic/ui/khorezmMap.vue"
 
 const initialEvent = () => {
   regionData.forEach((v) => {
