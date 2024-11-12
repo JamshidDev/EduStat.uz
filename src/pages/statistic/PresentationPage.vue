@@ -8,9 +8,17 @@ const initialEvent = () => {
   regionData.forEach((v) => {
     const element = document.getElementById(v.id)
     element.addEventListener('click', (e) => {
+      hiddenAllElement()
       element.style.fill = '#51A8FE'
-      const tooltip = document.getElementById('tooltip3').style.visibility = 'visible'
+      const tooltip = document.getElementById(v.tooltipId).style.visibility = 'visible'
     })
+  })
+}
+
+const hiddenAllElement = ()=>{
+  regionData.forEach((v) => {
+    document.getElementById(v.id).style.fill = '#BFE2C8'
+    document.getElementById(v.tooltipId).style.visibility = 'hidden'
   })
 }
 

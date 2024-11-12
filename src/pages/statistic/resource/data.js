@@ -3,55 +3,67 @@
 export const regionData =[
     {
         id:'region1',
-        name:"Qoraqolpog'iston"
+        name:"Qoraqolpog'iston",
+        tooltipId:'tooltip_1'
     },
     {
         id:'region2',
-        name:"Xorazm"
+        name:"Xorazm",
+        tooltipId:'tooltip_2'
     },
     {
         id:'region3',
         name:"Navoiy",
-        tooltipId:'tooltip3'
+        tooltipId:'tooltip_3'
     },
     {
         id:'region4',
-        name:"Buxoro"
+        name:"Buxoro",
+        tooltipId:'tooltip_4'
     },
     {
         id:'region5',
-        name:"Samarqand"
+        name:"Samarqand",
+        tooltipId:'tooltip_5'
     },
     {
         id:'region6',
-        name:"Jizzax"
+        name:"Jizzax",
+        tooltipId:'tooltip_6'
     },
     {
         id:'region7',
-        name:"Qashqadaryo"
+        name:"Qashqadaryo",
+        tooltipId:'tooltip_7'
     },
     {
         id:'region8',
-        name:"Surxandaryo"
+        name:"Surxandaryo",
+        tooltipId:'tooltip_8'
     },
     {
         id:'region9',
-        name:"Tashkent"
+        name:"Tashkent",
+        tooltipId:'tooltip_9',
     },
     {
         id:'region10',
-        name:"Farg'ona"
+        name:"Farg'ona",
+        tooltipId:'tooltip_10',
     },
     {
         id:'region11',
-        name:"Andijon"
+        name:"Andijon",
+        tooltipId:'tooltip_11',
     },
     {
         id:'region12',
-        name:"Sirdaryo"
+        name:"Sirdaryo",
+        tooltipId:'tooltip_12',
     },
     {
         id:'region13',
-        name:"Namangan"
+        name:"Namangan",
+        tooltipId:'tooltip_13',
     },
 ]
