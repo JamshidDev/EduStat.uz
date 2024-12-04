@@ -1,14 +1,15 @@
 <template>
   <yandex-map
+      class="rounded overflow-hidden"
       v-model="map"
       :settings="{
         location: {
           center: [69.240562,41.311081],
-          zoom: 12,
+          zoom: 16,
         },
       }"
       width="100%"
-      height="500px"
+      height="260px"
   >
     <yandex-map-default-scheme-layer/>
     <yandex-map-default-features-layer/>
@@ -18,22 +19,22 @@
           :settings="{
             coordinates:marker.coords,
             title: marker.name,
-            draggable: true,
+            draggable: false,
             onDragMove,
         }"
       />
     </template>
 
 
-    <yandex-map-controls :settings="{ position: 'bottom right' }">
-      <yandex-map-geolocation-control/>
-    </yandex-map-controls>
-    <yandex-map-listener
-        :settings="{
-             onClick: createEvent('dom', 'click'),
-             onUpdate: createEvent('map', 'update'),
-        }"
-    />
+<!--    <yandex-map-controls :settings="{ position: 'bottom right' }">-->
+<!--      <yandex-map-geolocation-control/>-->
+<!--    </yandex-map-controls>-->
+<!--    <yandex-map-listener-->
+<!--        :settings="{-->
+<!--             onClick: createEvent('dom', 'click'),-->
+<!--             onUpdate: createEvent('map', 'update'),-->
+<!--        }"-->
+<!--    />-->
   </yandex-map>
 </template>
 
@@ -50,19 +51,25 @@ import { YandexMap,
 
 
 const map = shallowRef(null);
-const markerList = ref([])
+const markerList = ref([
+  {
+    name:"Markaz",
+    coords:[69.240562,41.311081]
+  }
+])
 const markerModel = ref(null)
 
 
 
 const onDragMove = (e) => {
-  // console.log(e)
+  console.log(e)
 }
 
 
 const createEvent =(category,type)=> {
   return (object,event) => {
     if(object && event === undefined){
+      console.log(object.location.center)
       addMarker(object.location.center)
     }
 

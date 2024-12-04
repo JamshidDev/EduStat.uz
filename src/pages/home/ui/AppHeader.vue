@@ -4,7 +4,7 @@ import LangDropdown from "@/components/general/LangDropdown.vue"
 </script>
 
 <template>
-<div class="w-full h-[100px] flex justify-between items-center bg-[#223458] px-4 relative app-header-bg">
+<div class="w-full h-[100px] flex justify-between items-center bg-[#071633] px-4 relative app-header-bg">
   <div class="flex z-10">
     <slot name="app-logo"></slot>
   </div>

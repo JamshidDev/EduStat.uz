@@ -3,6 +3,8 @@ import AppHeader from "@/pages/home/ui/AppHeader.vue"
 import AppLogo from "@/pages/home/ui/AppLogo.vue"
 import MainSection from "@/pages/home/section/MainSection.vue"
 import PortalSection from "@/pages/home/section/PortalSection.vue"
+import MapSection from "@/pages/home/mapSection/MapSection.vue"
+import FooterSection from "@/pages/home/section/FooterSection.vue"
 </script>
 
 <template>
@@ -15,6 +17,8 @@ import PortalSection from "@/pages/home/section/PortalSection.vue"
       </AppHeader>
       <MainSection/>
       <PortalSection/>
+      <MapSection/>
+      <FooterSection/>
     </div>
   </div>
 </template>
