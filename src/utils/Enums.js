@@ -55,3 +55,22 @@ export const portalTabs = [
         key:0
     },
 ]
+
+export const regionList = [
+    {
+        name:"Barchasi",
+        id:20,
+    },
+    {
+        name:"Xorazm",
+        id:1,
+    },
+    {
+        name:"Buxoro",
+        id:2,
+    },
+    {
+        name:"Samarqand",
+        id:3,
+    },
+]

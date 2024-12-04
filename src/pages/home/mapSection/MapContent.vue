@@ -1,0 +1,93 @@
+<script setup>
+import {Search48Filled, Filter20Filled, BuildingBank28Regular, FullScreenMaximize16Regular, ChartMultiple20Regular} from "@vicons/fluent"
+import {regionList} from "@/utils/index.js"
+const currentElement = ref(20)
+</script>
+
+<template>
+  <div style="height: calc(100vh - 100px)">
+    <div class="grid grid-cols-12 gap-4">
+      <div class="col-span-12">
+        <n-input-group class="mt-4">
+          <n-input
+              class="bg-surface-ground"
+              placeholder="Tuman va maktablar bo’yicha qidiruv..."
+          >
+            <template #prefix>
+              <n-icon :component="Search48Filled" />
+            </template>
+          </n-input>
+
+          <n-popover
+              trigger="click"
+              scrollable
+              placement="bottom"
+              style="width: 300px; height: 300px"
+          >
+            <template #trigger>
+              <n-button color="#79838E">
+                <template #icon>
+                  <n-icon><Filter20Filled /></n-icon>
+                </template>
+              </n-button>
+            </template>
+            <div class="flex flex-col">
+              <span class="text-sm text-surface-400">{{$t('content.filterSetting')}}</span>
+              <slot name="filterContent"></slot>
+            </div>
+          </n-popover>
+        </n-input-group>
+      </div>
+
+      <template v-for="(item,idx) in 10" :key="idx">
+        <div class="col-span-6 bg-[#F3F5FB]">
+          <div class="w-full flex bg-[#F3F5FB] border border-surface-200 rounded p-2">
+            <div class="flex justify-center items-center rounded bg-primary w-[30px] h-[30px]">
+              <n-icon size="24" color="#FFFFFF">
+                <BuildingBank28Regular/>
+              </n-icon>
+            </div>
+            <div style="width: calc(100% - 30px)" class="flex flex-col pl-2">
+              <span class="font-bold leading-[1]">17 772 607</span>
+              <span class="text-[#9CAFB7] text-xs leading-[1]">Ta’lim tashkiloti</span>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
+
+ <div class="grid grid-cols-12 gap-2 mt-2">
+   <div class="col-span-4">
+     <n-select
+         v-model:value="currentElement"
+         :options="regionList"
+         label-field="name"
+         value-field="id"
+     />
+   </div>
+   <div class="col-span-4">
+     <n-button icon-placement="right" class="w-full">
+       Infografika
+       <template #icon>
+         <ChartMultiple20Regular/>
+       </template>
+     </n-button>
+   </div>
+   <div class="col-span-4">
+     <n-button icon-placement="right">
+       To’liq ekran
+       <template #icon>
+         <FullScreenMaximize16Regular/>
+       </template>
+     </n-button>
+   </div>
+   <div class="col-span-12">
+     <span class="text-xs font-normal text-[#79838E]">Respublika bo’yicha ko’rsatkichlar 2024 -yil 14- noyabr holatiga ko’ra </span>
+   </div>
+ </div>
+</template>
+
+<style scoped>
+
+</style>

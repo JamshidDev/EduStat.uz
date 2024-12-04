@@ -5,8 +5,8 @@ import Map from "@/components/yandexMap/Map.vue"
 
 <template>
 <div class="w-full bg-[#071633] min-h-[300px] flex flex-col">
-<div class="grid grid-cols-12 p-10">
-  <div class="col-span-3 px-4">
+<div class="grid grid-cols-12 xl:px-10 lg:px-10 md:px-5 px-0 py-10">
+  <div class="xl:col-span-3 lg:col-span-3 md:col-span-6 col-span-12 px-4">
     <h6 class="text-lg text-white mb-10">Bog'lanish</h6>
     <div class="text-[#C9D2EE] flex gap-4 mb-2">
       <n-icon size="24">
@@ -36,7 +36,7 @@ import Map from "@/components/yandexMap/Map.vue"
     </div>
   </div>
 
-  <div class="col-span-3 px-4">
+  <div class="xl:col-span-3 lg:col-span-3 md:col-span-6 col-span-12 px-4">
     <h6 class="text-lg text-white mb-10">Tuzilma</h6>
     <div class="text-[#C9D2EE] flex gap-4 mb-2">
       <n-icon size="24">
@@ -64,7 +64,7 @@ import Map from "@/components/yandexMap/Map.vue"
     </div>
   </div>
 
-  <div class="col-span-3 px-4">
+  <div class="xl:col-span-3 lg:col-span-3 md:col-span-6 col-span-12 px-4">
     <h6 class="text-lg text-white mb-10">Tuzilma</h6>
     <div class="text-[#C9D2EE] flex gap-4 mb-2">
       <n-icon size="24">
@@ -91,7 +91,7 @@ import Map from "@/components/yandexMap/Map.vue"
       <span>Sayt xaritasi</span>
     </div>
   </div>
-  <div class="col-span-3 px-4">
+  <div class="xl:col-span-3 lg:col-span-3 md:col-span-6 col-span-12 px-4">
     <h6 class="text-lg text-white mb-4">Xaritada joylashuv</h6>
     <div class="rounded">
       <Map />
@@ -103,7 +103,7 @@ import Map from "@/components/yandexMap/Map.vue"
 
 
   <div class="w-full border-t border-[#6a9cd25c] p-4 flex justify-center items-center">
-    <span class="text-xs text-center text-[#C9D2EE] font-normal">Copyright © 2024. Materialdan to‘liq yoki qisman foydalanganda, trm.uz manbasi ko‘rsatilishi shart.</span>
+    <span class="text-xs text-center text-[#C9D2EE] font-normal">Copyright © 2024. Materialdan to‘liq yoki qisman foydalanganda,   <a href="https://trm.uz" target="_blank" class="hover:text-primary cursor-pointer">trm.uz</a> manbasi ko‘rsatilishi shart.</span>
   </div>
 </div>
 </template>
