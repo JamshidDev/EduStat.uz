@@ -34,10 +34,16 @@
         "requiredImageField": "Rasm yuklanishi shart!"
     },
     "navigation": {
-        "client": "Mijozlar",
-        "product": "Mahsulotlar",
-        "category": "Kategoriyalar",
-        "brand": "Brendlar"
+        "publicInfo": "Ochiq statistika",
+        "document": "Hujjatlar",
+        "contact": "Bog'lanish",
+        "service": "Axborot xizmati",
+        "about": "Biz haqimizda"
+    },
+    "mainSection": {
+        "title": "Ta'lim va statistika",
+        "subtitle": "Uning joriy vaqtdagi raqamlarda aks etgan ifodasi",
+        "description": "Har bir statistika ortida bir insonning hayoti yotadi. Mamlakatimizda 2.4 mln o‘quvchi bilim olmoqda – bu esa kelajakni yaratayotgan avloddir. Raqamlar shunchaki fakt emas, ular bizning taraqqiyot yo‘limizning ko‘zgusidir."
     },
 
     "loginPage":{

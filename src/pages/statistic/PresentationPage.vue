@@ -1,30 +1,13 @@
 <script setup>
 import AppHeader from "@/pages/statistic/ui/AppHeader.vue"
 import AppBanner from "@/pages/statistic/ui/AppBanner.vue"
-import {regionData} from "@/pages/statistic/resource/data.js"
 import ZoomContainer from "@/pages/statistic/ui/zoomContainer.vue"
-import KhorezmMap from "@/pages/statistic/ui/khorezmMap.vue"
+import {usePresentationStore} from "@/store/modules/index.js"
+const store = usePresentationStore()
 
-const initialEvent = () => {
-  regionData.forEach((v) => {
-    const element = document.getElementById(v.id)
-    element.addEventListener('click', (e) => {
-      hiddenAllElement()
-      element.style.fill = '#51A8FE'
-      const tooltip = document.getElementById(v.tooltipId).style.visibility = 'visible'
-    })
-  })
-}
-
-const hiddenAllElement = ()=>{
-  regionData.forEach((v) => {
-    document.getElementById(v.id).style.fill = '#BFE2C8'
-    document.getElementById(v.tooltipId).style.visibility = 'hidden'
-  })
-}
 
 onMounted(() => {
-  initialEvent()
+  store._initialEvent()
 })
 
 </script>
@@ -41,8 +24,6 @@ onMounted(() => {
         <ZoomContainer/>
       </div>
     </div>
-
-
   </div>
 </template>
 
@@ -52,6 +33,5 @@ onMounted(() => {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100%;
-
 }
 </style>

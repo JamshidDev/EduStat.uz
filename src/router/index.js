@@ -7,6 +7,7 @@ import RegisterPage from "@/pages/register/RegisterPage.vue";
 import ServiceLayout from "@/layouts/Organization/Service/ServiceLayout.vue";
 import {AppLayouts} from "@/utils/index.js";
 import PresentationPage from "@/pages/statistic/PresentationPage.vue"
+import LandingPage from "@/pages/home/LandingPage.vue"
 
 import {AppPaths} from "@/utils/index.js";
 
@@ -28,7 +29,7 @@ const routes = [
     {
         path:AppPaths.Main,
         beforeEnter: beforeLogin,
-        component:PresentationPage,
+        component:LandingPage,
         meta:{
             layout: AppLayouts.empty
         }

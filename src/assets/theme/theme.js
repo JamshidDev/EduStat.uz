@@ -1,13 +1,11 @@
 
  import {createTheme} from "naive-ui"
-
  export default  {
      common: {
          primaryColor: '#0057ff',
          primaryColorHover: 'rgb(0,76,225)',
          primaryColorPressed: '#1162ff',
          primaryColorSuppl: '#1062ff',
-
          errorColor: '#E53935',
          errorColorHover: '#E53935',
          errorColorPressed: '#D32F2F',

@@ -131,15 +131,15 @@ onMounted(()=>{
 
 <template>
   <n-dropdown trigger="click" :options="options">
-    <div class="flex items-center gap-2  border-surface-line py-1 px-2 rounded-md cursor-pointer border w-[140px]">
+    <div class="flex items-center gap-2  py-1 px-2 rounded-md cursor-pointer w-[140px]">
       <n-avatar
-          class="!w-[24px] !h-[24px]"
+          class="!w-[18px] !h-[18px]"
           round
           size="small"
           :src="currentLang"
       />
-      <span class="text-[14px] text-surface-500 whitespace-nowrap" style="width: calc(100% - 60px)">{{$t(currentLangText)}}</span>
-      <n-icon color="#0e7a0d" class="text-[16px]">
+      <span class="text-[14px] whitespace-nowrap text-white" style="width: calc(100% - 60px)">{{$t(currentLangText)}}</span>
+      <n-icon class="text-[16px] text-primary">
         <ChevronDown24Filled />
       </n-icon>
     </div>

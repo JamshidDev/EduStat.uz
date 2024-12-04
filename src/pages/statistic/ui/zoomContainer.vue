@@ -1,6 +1,8 @@
 <script setup>
 import UzbMap from "@/pages/statistic/ui/uzbMap.vue"
-
+import {usePresentationStore} from "@/store/modules/index.js"
+import KharezmMap from "@/pages/statistic/resource/kharezmMap.vue"
+const store = usePresentationStore()
 const panning = ref(false)
 const scale = ref(1)
 const pointX = ref(0)
@@ -11,6 +13,7 @@ const start = ref({
 })
 
 const zoo_element = ref(null)
+const kharezm_element = ref(null)
 const zoo_element_container = ref(null)
 
 const initialZoom = ()=>{
@@ -72,7 +75,12 @@ const initialZoom = ()=>{
 }
 
 onMounted(()=>{
-  initialZoom()
+  // initialZoom()
+  store._initialZoom(zoo_element.value, zoo_element_container.value)
+  store.kharezm_element = kharezm_element.value
+  store._goPushMap(164,-33,1)
+  // store._pushKharezm(164,-33,1)
+
 })
 </script>
 
@@ -82,14 +90,19 @@ onMounted(()=>{
       ref="zoo_element_container"
       class="overflow-hidden border-round relative border flex justify-center items-center w-full h-full
 ">
-    <div id="trigger-zoom-element" ref="zoo_element"
-         class="trigger-zoom-element
-         shadow-1
-         cursor-pointer
+    <div class="absolute top-[4px] left-[6px] flex gap-x-4 text-xs font-bold text-gray-400">
+      <span>X:{{store.kharezmCoords.x}}</span>
+      <span>Y:{{store.kharezmCoords.y}}</span>
+      <span>Zoom:{{store.kharezmCoords.zoom}}</span>
+    </div>
 
-          flex justify-center items-center
-">
+    <div id="trigger-zoom-element" ref="zoo_element"
+         class="trigger-zoom-element cursor-pointer flex justify-center items-center
+                border border-gray-300  ">
       <UzbMap/>
+    </div>
+    <div ref="kharezm_element"  class="kharezm_elemen border border-blue-300">
+      <KharezmMap/>
     </div>
   </div>
 </template>
@@ -100,5 +113,15 @@ onMounted(()=>{
   transform: scale(1) translate(0px, 0px);
   transition: all 0.5s ease-out;
   cursor: grab;
+}
+.kharezm_elemen{
+  transform-origin: 0 0;
+  transform: scale(1) translate(0px, 0px);
+  transition: all 0.5s ease-out;
+  cursor: grab;
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //transform: scale(1) translate(-50%, -50%);
 }
 </style>
