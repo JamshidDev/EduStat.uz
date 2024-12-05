@@ -17,6 +17,29 @@
   }
 }
 
+.hidden-panel-tab{
+  .n-tab-pane{
+    display: none !important;
+  }
+  .n-tabs-tab{
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--gray-400) !important;
+    border-radius: 8px !important;
+    font-size: 12px !important;
+  }
+  .n-tabs-tab-pad, .n-tabs-pad{
+    border: none !important;
+  }
+  .n-tabs-nav-scroll-content{
+    border-bottom: none !important;
+  }
+  .n-tabs-tab--active{
+    color: var(--white-color) !important;
+    background: var(--primary-color) !important;
+  }
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }

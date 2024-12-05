@@ -74,3 +74,26 @@ export const regionList = [
         id:3,
     },
 ]
+
+export const mapFilterList = [
+    {
+        name:"Maktabgacha ta’lim",
+        id:1,
+    },
+    {
+        name:"Umimiy o’rta ta’lim",
+        id:2,
+    },
+    {
+        name:"O’rta maxsus proffesional ta’lim",
+        id:3,
+    },
+    {
+        name:"Oliy ta’lim",
+        id:4,
+    },
+    {
+        name:"Oliy ta’limdan keyingi ta’lim",
+        id:5,
+    },
+]

@@ -1,12 +1,10 @@
 <script setup>
 import MapContent from "@/pages/home/mapSection/MapContent.vue"
+import {mapFilterList} from "@/utils/index.js"
+import {usePresentationStore} from "@/store/modules/index.js"
 import MapElement from "@/pages/home/mapElement/MapElement.vue"
-import NavoiyRegion from "@/pages/home/mapElement/NavoiyRegion.vue"
-const activeElement = ref(1)
+const store = usePresentationStore()
 
-const onChange = ()=>{
-  activeElement.value = activeElement.value ===1? 2 : 1
-}
 </script>
 
 <template>
@@ -14,14 +12,20 @@ const onChange = ()=>{
   <div class="w-[480px] min-h-full shadow bg-surface-section border border-surface-200 rounded-xl p-4">
     <MapContent/>
   </div>
-  <div style="width:calc(100% - 480px)" class="min-h-full map_section_effect relative flex justify-center items-center">
-<!--    <div class="w-full bg-white rounded border border-surface-100 ">-->
-
-<!--    </div>-->
-    <MapElement v-if="activeElement === 1" />
+  <div style="width:calc(100% - 480px)" class="min-h-full map_section_effect relative">
+    <div style="width: calc(100% - 8px)" class="bg-white rounded-xl mx-1 border border-surface-100 p-1 shadow">
+      <n-tabs type="card" animated class="hidden-panel-tab" v-model:value="store.filterActiveTab">
+        <n-tab-pane v-for="(item ,idx) in mapFilterList" :key="idx" :name="item.id" :tab="item.name">
+          {{item.name}}
+        </n-tab-pane>
+      </n-tabs>
+    </div>
+    <div class="w-full flex justify-center items-center" style="height: calc(100vh - 40px)">
+      <MapElement/>
+    </div>
 <!--    <n-button @click="onChange">Change</n-button>-->
 <!--    <Transition name="zoom" mode="out-in">-->
-<!--      <MapElement v-if="activeElement === 1" />-->
+
 <!--      <NavoiyRegion v-else-if="activeElement === 2"/>-->
 <!--    </Transition>-->
 
@@ -56,4 +60,6 @@ const onChange = ()=>{
   transform: scale(0.21);
   opacity: 0.3;
 }
+
+
 </style>

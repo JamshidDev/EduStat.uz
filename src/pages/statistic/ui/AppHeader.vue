@@ -47,24 +47,5 @@ const activeTab = ref(1)
 </template>
 
 <style>
-.hidden-panel-tab{
-  .n-tab-pane{
-    display: none !important;
-  }
-  .n-tabs-tab{
-    background-color: transparent !important;
-    border: none !important;
-    color: var(--gray-400) !important;
-  }
-  .n-tabs-tab-pad, .n-tabs-pad{
-    border: none !important;
-  }
-  .n-tabs-nav-scroll-content{
-    border-bottom: none !important;
-  }
-  .n-tabs-tab--active{
-    color: var(--white-color) !important;
-    background: rgba(16, 169, 255, 0.18) !important;
-  }
-}
+
 </style>

@@ -94,7 +94,8 @@ export const usePresentationStore = defineStore("presentationStore", {
             x:0,
             y:0,
             zoom:1,
-        }
+        },
+        filterActiveTab:1,
 
 
     }),
