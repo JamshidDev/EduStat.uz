@@ -3,6 +3,7 @@ import MapContent from "@/pages/home/mapSection/MapContent.vue"
 import {mapFilterList} from "@/utils/index.js"
 import {usePresentationStore} from "@/store/modules/index.js"
 import MapElement from "@/pages/home/mapElement/MapElement.vue"
+import KhorezmRegion from "@/pages/home/mapElement/KhorezmRegion.vue"
 const store = usePresentationStore()
 
 onMounted(()=>{
@@ -29,13 +30,14 @@ onMounted(()=>{
       </n-tabs>
     </div>
     <div class="w-full flex justify-center items-center" style="height: calc(100vh - 40px)">
-      <MapElement/>
+
+      <Transition name="zoom" mode="out-in">
+        <MapElement v-if="store.activeState === 'uzbekistan'"/>
+        <KhorezmRegion v-else-if="store.activeState === 'khorezm'"/>
+      </Transition>
     </div>
 <!--    <n-button @click="onChange">Change</n-button>-->
-<!--    <Transition name="zoom" mode="out-in">-->
 
-<!--      <NavoiyRegion v-else-if="activeElement === 2"/>-->
-<!--    </Transition>-->
 
   </div>
 </div>

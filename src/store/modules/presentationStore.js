@@ -77,6 +77,7 @@ export const usePresentationStore = defineStore("presentationStore", {
                 tooltipId:'tooltip_13',
             },
         ],
+        activeState:'uzbekistan',
 
         panning:false,
         scale:1,
@@ -122,6 +123,9 @@ export const usePresentationStore = defineStore("presentationStore", {
                     const title = document.querySelector(`#${v.tooltipId} text tspan`).innerHTML = v.name
                     tooltip.style.visibility = 'visible'
                     console.log(tooltip)
+                })
+                element.addEventListener('click',()=>{
+                    this.activeState = 'khorezm'
                 })
             })
         },
