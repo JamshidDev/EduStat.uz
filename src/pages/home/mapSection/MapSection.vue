@@ -4,12 +4,9 @@ import {mapFilterList} from "@/utils/index.js"
 import {usePresentationStore} from "@/store/modules/index.js"
 import MapElement from "@/pages/home/mapElement/MapElement.vue"
 import KhorezmRegion from "@/pages/home/mapElement/KhorezmRegion.vue"
+import TashkentCity from "@/pages/home/mapElement/TashkentCity.vue"
 const store = usePresentationStore()
 
-onMounted(()=>{
-  store._initialEvent()
-  store._hiddenAllElement()
-})
 
 </script>
 
@@ -34,6 +31,7 @@ onMounted(()=>{
       <Transition name="zoom" mode="out-in">
         <MapElement v-if="store.activeState === 'uzbekistan'"/>
         <KhorezmRegion v-else-if="store.activeState === 'khorezm'"/>
+        <TashkentCity v-else-if="store.activeState === 'tashkent'"/>
       </Transition>
     </div>
 <!--    <n-button @click="onChange">Change</n-button>-->

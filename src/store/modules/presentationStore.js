@@ -76,8 +76,65 @@ export const usePresentationStore = defineStore("presentationStore", {
                 name:"Namangan",
                 tooltipId:'tooltip_13',
             },
+            {
+                id:'region14',
+                name:"Toshkent shahar",
+                tooltipId:'tooltip_14',
+            },
         ],
-        activeState:'uzbekistan',
+        activeState:'khorezm',
+        korezmDistrict:[
+            {
+                name:"Gurlan tumani",
+                id:"district2_1",
+                tooltipId:'tooltip2_1',
+            },
+            {
+                name:"Shovotr tumani",
+                id:"district2_2",
+                tooltipId:'tooltip2_2',
+            },
+            {
+                name:"Yangibozor tumani",
+                id:"district2_3",
+                tooltipId:'tooltip2_3',
+            },
+            {
+                name:"Qo'shko'pir tumani",
+                id:"district2_4",
+                tooltipId:'tooltip2_4',
+            },
+            {
+                name:"Urganch tumani",
+                id:"district2_5",
+                tooltipId:'tooltip2_5',
+            },
+            {
+                name:"Xiva tumani",
+                id:"district2_6",
+                tooltipId:'tooltip2_6',
+            },
+            {
+                name:"Xonqa tumani",
+                id:"district2_7",
+                tooltipId:'tooltip2_7',
+            },
+            {
+                name:"Yangiariq tumani",
+                id:"district2_8",
+                tooltipId:'tooltip2_8',
+            },
+            {
+                name:"Bog'ot tumani",
+                id:"district2_9",
+                tooltipId:'tooltip2_9',
+            },
+            {
+                name:"Xozarasp tumani",
+                id:"district2_10",
+                tooltipId:'tooltip2_10',
+            },
+        ],
 
         panning:false,
         scale:1,
@@ -107,112 +164,57 @@ export const usePresentationStore = defineStore("presentationStore", {
     },
     actions:{
         _initialEvent(){
-            const tashkent = document.getElementById('region14')
             this.regionList.forEach((v) => {
                 const element = document.getElementById(v.id)
                 element.addEventListener('mouseover', (e) => {
                     this._hiddenAllElement()
                     element.style.fill = '#51A8FE'
 
-
-                    if(v.id === 'region9'){
-                        tashkent.style.fill = '#51A8FE'
-                    }
-
                     const tooltip = document.getElementById(v.tooltipId)
-                    const title = document.querySelector(`#${v.tooltipId} text tspan`).innerHTML = v.name
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
                     tooltip.style.visibility = 'visible'
-                    console.log(tooltip)
                 })
                 element.addEventListener('click',()=>{
-                    this.activeState = 'khorezm'
+                    this.changeState('khorezm')
                 })
             })
         },
         _hiddenAllElement(){
             this.regionList.forEach((v) => {
                 document.getElementById(v.id).style.fill = '#BFE2C8'
-                document.getElementById('region14').style.fill = '#BFE2C8'
                 document.getElementById(v.tooltipId).style.visibility = 'hidden'
             })
         },
-        _initialZoom(el, container){
-            this.zoo_element = el
-            this.zoo_element_container = container
-            this.zoo_element.addEventListener('mousedown', (event) => {
-                event.preventDefault();
-                this.start = {
-                    x: event.clientX - this.pointX,
-                    y: event.clientY - this.pointY,
-                };
-                this.panning = true;
-            })
+        _khorezmEvents(){
+            this.korezmDistrict.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this._hideKhorezmElement()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
 
-            this.zoo_element.addEventListener('mouseup', (event) => {
-                event.preventDefault();
-                this.panning = false;
-            })
-
-            this.zoo_element.addEventListener('mousemove', (event) => {
-                event.preventDefault();
-                if (!this.panning) {
-                    return;
-                }
-                this.pointX = (event.clientX - this.start.x);
-                this.pointY = (event.clientY - this.start.y);
-                this.zoo_element.style.transform = `translate(${this.pointX}px, ${this.pointY}px) scale(${this.scale})`
-
-            });
-
-            this.zoo_element.addEventListener('wheel', (event) => {
-                event.preventDefault();
-                const xs = (event.clientX - this.pointX) / this.scale;
-                const ys = (event.clientY - this.pointY) / this.scale;
-                const delta = (event.wheelDelta ? event.wheelDelta : -event.deltaY);
-                delta > 0 ? this.scale *= 1.2 : this.scale /= 1.2;
-                this.pointX = event.clientX - xs * this.scale;
-                this.pointY = event.clientY - ys * this.scale;
-
-                console.log(`pointX: ${this.pointX}`)
-                console.log(`pointY: ${this.pointY}`)
-                console.log(`scale: ${this.scale}`)
-                this.zoo_element.style.transform = `translate(${this.pointX}px, ${this.pointY}px) scale(${this.scale})`;
-            })
-
-            this.zoo_element.addEventListener("mouseout", (event) => {
-                this.panning = false;
-            });
-            this.zoo_element_container.addEventListener("contextmenu", (event) => {
-                event.preventDefault();
-            })
-            document.body.style.overflow = "hidden";
-            this.zoo_element_container.addEventListener("mouseover", (event) => {
-                event.preventDefault();
-                document.body.style.overflow = "hidden";
-            })
-            this.zoo_element_container.addEventListener("mouseout", (event) => {
-                event.preventDefault();
-                document.body.style.overflow = "auto";
             })
         },
-        _goPushMap(x,y,zoom){
-            this.pointX = x
-            this.pointY = y
-            this.scale = zoom
-            this.zoo_element.style.transform = `translate(${this.pointX}px, ${this.pointY}px) scale(${this.scale})`;
+        _hideKhorezmElement(){
+            this.korezmDistrict.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                element.style.fill = '#BFE2C8'
+            })
         },
-        _changeMap(){
-            this._goPushMap(164,-33,1)
-            setTimeout(()=>{
-                this._goPushMap(790,493,0.23)
-                this._pushKharezm(164,-33,1)
-            },400)
-        },
-        _pushKharezm(x,y,zoom){
-            this.kharezmCoords.x = x
-            this.kharezmCoords.y = y
-            this.kharezmCoords.zoom = zoom
-            this.kharezm_element.style.transform = `translate(${this.kharezmCoords.x}px, ${this.kharezmCoords.y}px) scale(${this.kharezmCoords.zoom})`;
+        changeState(state){
+            this.activeState = state
         }
 
     }

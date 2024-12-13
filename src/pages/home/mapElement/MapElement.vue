@@ -1,10 +1,15 @@
 <script setup>
+import {usePresentationStore} from "@/store/modules/index.js"
+const store = usePresentationStore()
 
+onMounted(()=>{
+  store._initialEvent()
+  store._hiddenAllElement()
+})
 </script>
 
 <template>
-
-  <svg class="cursor-pointer" width="800px" height="776" viewBox="0 0 1310 776" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="800px" height="776" viewBox="0 0 1310 776" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="1310" height="776"/>
     <g id="mapuz">
       <g id="Uzbekistan" filter="url(#filter0_d_0_1)">
@@ -224,43 +229,62 @@
         </g>
         <ellipse id="Ellipse 1_11" cx="1156.23" cy="438.608" rx="5.22892" ry="4.60844" fill="#0091FF"/>
       </g>
-      <g id="tooltip_11">
-        <path id="Vector 1_12" d="M1112 208H1238V456" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
-        <g id="Group 9">
+      <g id="tooltip_14">
+        <path id="Vector 1_12" d="M929 299H1006V404.262" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
+        <g id="Group 8_2">
           <g id="Rectangle 7_12" filter="url(#filter23_d_0_1)">
-            <rect x="760" y="161.903" width="352.429" height="84.7952" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
-            <rect x="760.5" y="162.403" width="351.429" height="83.7952" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
+            <rect x="577" y="252.903" width="352.429" height="84.7952" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
+            <rect x="577.5" y="253.403" width="351.429" height="83.7952" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
           </g>
           <g id="Rectangle 8_12">
             <g filter="url(#filter24_i_0_1)">
+              <rect x="612.557" y="240" width="282.361" height="26.7289" rx="12" fill="#1FA2F4"/>
+            </g>
+            <rect x="613.057" y="240.5" width="281.361" height="25.7289" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
+          </g>
+          <text id="Toshkent shahar" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="688.421" y="256.652">Toshkent shahar</tspan></text>
+          <text id="Shaharlar soni: 204_12" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="671.12" y="293.52">Shaharlar soni: 204</tspan></text>
+          <text id="Qishloqlar soni: 507_12" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="671.12" y="317.483">Qishloqlar soni: 507</tspan></text>
+        </g>
+        <ellipse id="Ellipse 1_12" cx="1005.23" cy="404.608" rx="5.22892" ry="4.60844" fill="#0091FF"/>
+      </g>
+      <g id="tooltip_11">
+        <path id="Vector 1_13" d="M1112 208H1238V456" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
+        <g id="Group 9">
+          <g id="Rectangle 7_13" filter="url(#filter25_d_0_1)">
+            <rect x="760" y="161.903" width="352.429" height="84.7952" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
+            <rect x="760.5" y="162.403" width="351.429" height="83.7952" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
+          </g>
+          <g id="Rectangle 8_13">
+            <g filter="url(#filter26_i_0_1)">
               <rect x="795.557" y="149" width="282.361" height="26.7289" rx="12" fill="#1FA2F4"/>
             </g>
             <rect x="796.057" y="149.5" width="281.361" height="25.7289" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
           </g>
           <text id="Andijon viloyati" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="876.615" y="165.652">Andijon viloyati</tspan></text>
-          <text id="Shaharlar soni: 204_12" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="854.12" y="202.52">Shaharlar soni: 204</tspan></text>
-          <text id="Qishloqlar soni: 507_12" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="854.12" y="226.483">Qishloqlar soni: 507</tspan></text>
+          <text id="Shaharlar soni: 204_13" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="854.12" y="202.52">Shaharlar soni: 204</tspan></text>
+          <text id="Qishloqlar soni: 507_13" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="854.12" y="226.483">Qishloqlar soni: 507</tspan></text>
         </g>
-        <ellipse id="Ellipse 1_12" cx="1238.23" cy="455.608" rx="5.22892" ry="4.60844" fill="#0091FF"/>
+        <ellipse id="Ellipse 1_13" cx="1238.23" cy="455.608" rx="5.22892" ry="4.60844" fill="#0091FF"/>
       </g>
       <g id="tooltip_10">
-        <path id="Vector 1_13" d="M1048 249H1165V485" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
+        <path id="Vector 1_14" d="M1048 249H1165V485" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Group 10">
-          <g id="Rectangle 7_13" filter="url(#filter25_d_0_1)">
+          <g id="Rectangle 7_14" filter="url(#filter27_d_0_1)">
             <rect x="696" y="203.903" width="352.429" height="84.7952" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
             <rect x="696.5" y="204.403" width="351.429" height="83.7952" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
           </g>
-          <g id="Rectangle 8_13">
-            <g filter="url(#filter26_i_0_1)">
+          <g id="Rectangle 8_14">
+            <g filter="url(#filter28_i_0_1)">
               <rect x="731.557" y="191" width="282.361" height="26.7289" rx="12" fill="#1FA2F4"/>
             </g>
             <rect x="732.057" y="191.5" width="281.361" height="25.7289" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
           </g>
           <text id="Farg&#226;&#128;&#153;ona viloyati" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="809.1" y="207.652">Farg&#x2019;ona viloyati</tspan></text>
-          <text id="Shaharlar soni: 204_13" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="790.12" y="244.52">Shaharlar soni: 204</tspan></text>
-          <text id="Qishloqlar soni: 507_13" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="790.12" y="268.483">Qishloqlar soni: 507</tspan></text>
+          <text id="Shaharlar soni: 204_14" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="790.12" y="244.52">Shaharlar soni: 204</tspan></text>
+          <text id="Qishloqlar soni: 507_14" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="790.12" y="268.483">Qishloqlar soni: 507</tspan></text>
         </g>
-        <ellipse id="Ellipse 1_13" cx="1165.23" cy="484.608" rx="5.22892" ry="4.60844" fill="#0091FF"/>
+        <ellipse id="Ellipse 1_14" cx="1165.23" cy="484.608" rx="5.22892" ry="4.60844" fill="#0091FF"/>
       </g>
     </g>
     <defs>
@@ -493,7 +517,7 @@
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
         <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
       </filter>
-      <filter id="filter23_d_0_1" x="756" y="161.903" width="360.429" height="92.7954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter23_d_0_1" x="573" y="252.903" width="360.429" height="92.7954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
@@ -503,7 +527,7 @@
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
       </filter>
-      <filter id="filter24_i_0_1" x="795.557" y="149" width="282.361" height="30.729" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter24_i_0_1" x="612.557" y="240" width="282.361" height="30.729" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -513,7 +537,7 @@
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
         <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
       </filter>
-      <filter id="filter25_d_0_1" x="692" y="203.903" width="360.429" height="92.7954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter25_d_0_1" x="756" y="161.903" width="360.429" height="92.7954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
@@ -523,7 +547,27 @@
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
       </filter>
-      <filter id="filter26_i_0_1" x="731.557" y="191" width="282.361" height="30.729" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter26_i_0_1" x="795.557" y="149" width="282.361" height="30.729" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+      </filter>
+      <filter id="filter27_d_0_1" x="692" y="203.903" width="360.429" height="92.7954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+      </filter>
+      <filter id="filter28_i_0_1" x="731.557" y="191" width="282.361" height="30.729" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -535,7 +579,6 @@
       </filter>
     </defs>
   </svg>
-
 
 </template>
 
