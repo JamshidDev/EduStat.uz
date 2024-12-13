@@ -10,7 +10,7 @@ import LangDropdown from "@/components/general/LangDropdown.vue"
   </div>
   <div class="flex ">
     <template v-for="(item, idx) in navigationData" :key="idx">
-      <a href="#" class="text-sm uppercase text-white p-2 mx-1 hover:text-primary transition-all">
+      <a :href="`#${item.key}`" class="text-sm uppercase text-white p-2 mx-1 hover:text-primary transition-all">
         {{$t(item.name)}}
       </a>
     </template>

@@ -1,7 +1,14 @@
 <script setup>
-import {Search48Filled, Filter20Filled, BuildingBank28Regular, FullScreenMaximize16Regular, ChartMultiple20Regular} from "@vicons/fluent"
+import {Search48Filled, Filter20Filled, BuildingBank28Regular, FullScreenMaximize16Regular, ChartMultiple20Regular, FullScreenMinimize24Regular} from "@vicons/fluent"
 import {regionList} from "@/utils/index.js"
 const currentElement = ref(20)
+import {usePresentationStore} from "@/store/modules/index.js"
+const store = usePresentationStore()
+
+const onChangeScreen = ()=>{
+  store.fullScreen = !store.fullScreen
+  document.body.style.overflow = store.fullScreen? 'hidden' : 'auto'
+}
 </script>
 
 <template>
@@ -75,10 +82,13 @@ const currentElement = ref(20)
      </n-button>
    </div>
    <div class="col-span-4">
-     <n-button icon-placement="right">
+     <n-button
+         @click="onChangeScreen"
+         icon-placement="right">
        To’liq ekran
        <template #icon>
-         <FullScreenMaximize16Regular/>
+         <FullScreenMinimize24Regular v-if="store.fullScreen"/>
+         <FullScreenMaximize16Regular v-else />
        </template>
      </n-button>
    </div>

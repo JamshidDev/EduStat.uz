@@ -96,6 +96,7 @@ export const usePresentationStore = defineStore("presentationStore", {
             zoom:1,
         },
         filterActiveTab:1,
+        fullScreen:false,
 
 
     }),
@@ -105,25 +106,29 @@ export const usePresentationStore = defineStore("presentationStore", {
     },
     actions:{
         _initialEvent(){
+            const tashkent = document.getElementById('region14')
             this.regionList.forEach((v) => {
                 const element = document.getElementById(v.id)
-                element.addEventListener('click', (e) => {
+                element.addEventListener('mouseover', (e) => {
                     this._hiddenAllElement()
                     element.style.fill = '#51A8FE'
 
-                    if(v.coords){
-                        this._goPushMap(v.coords.x,v.coords.y, v.coords.zoom)
+
+                    if(v.id === 'region9'){
+                        tashkent.style.fill = '#51A8FE'
                     }
 
                     const tooltip = document.getElementById(v.tooltipId)
-                    // const title = document.querySelector(`#${v.tooltipId} text tspan`).innerHTML = "Title"
+                    const title = document.querySelector(`#${v.tooltipId} text tspan`).innerHTML = v.name
                     tooltip.style.visibility = 'visible'
+                    console.log(tooltip)
                 })
             })
         },
         _hiddenAllElement(){
             this.regionList.forEach((v) => {
                 document.getElementById(v.id).style.fill = '#BFE2C8'
+                document.getElementById('region14').style.fill = '#BFE2C8'
                 document.getElementById(v.tooltipId).style.visibility = 'hidden'
             })
         },

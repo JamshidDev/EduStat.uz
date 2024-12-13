@@ -2,6 +2,7 @@
 import StatElement from "@/pages/home/ui/StatElement.vue"
 import StatText from "@/pages/home/ui/StatText.vue"
 import StatButton from "@/pages/home/ui/StatButton.vue"
+import PersonStat from "@/pages/home/ui/PersonStat.vue"
 </script>
 
 <template>
@@ -28,6 +29,7 @@ import StatButton from "@/pages/home/ui/StatButton.vue"
         :description="`ta litsey binosi`"
         :number="'four'"
     />
+    <PersonStat/>
     <StatButton/>
   </div>
 </template>

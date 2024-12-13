@@ -44,8 +44,8 @@ defineProps({
   right: 400px;
 }
 .element-four{
-  top:500px;
-  right: 200px;
+  bottom:170px;
+  right: 260px;
 }
 .animation_one, .animation_two, .animation_three, .animation_four {
   animation: vibration2 2s ease-in-out infinite;

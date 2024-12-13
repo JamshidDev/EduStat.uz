@@ -5,10 +5,18 @@ import {usePresentationStore} from "@/store/modules/index.js"
 import MapElement from "@/pages/home/mapElement/MapElement.vue"
 const store = usePresentationStore()
 
+onMounted(()=>{
+  store._initialEvent()
+  store._hiddenAllElement()
+})
+
 </script>
 
 <template>
-<div class="w-full min-h-screen flex bg-surface-ground border border-surface-200">
+<div
+    id="map_section"
+    :class="[store.fullScreen && 'fixed top-0 bottom-0 left-0 right-0 z-50']"
+    class="w-full min-h-screen flex bg-surface-ground border border-surface-200 ">
   <div class="w-[480px] min-h-full shadow bg-surface-section border border-surface-200 rounded-xl p-4">
     <MapContent/>
   </div>

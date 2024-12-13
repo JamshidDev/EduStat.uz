@@ -8,8 +8,12 @@ export const AppLayouts = {
 
 export const navigationData = [
     {
+        name:'navigation.about',
+        key:'about_section'
+    },
+    {
         name:'navigation.publicInfo',
-        key:'public-section'
+        key:'map_section'
     },
     {
         name:'navigation.document',
@@ -21,11 +25,7 @@ export const navigationData = [
     },
     {
         name:'navigation.contact',
-        key:'public-section'
-    },
-    {
-        name:'navigation.about',
-        key:'public-section'
+        key:'contact_section'
     },
 ]
 

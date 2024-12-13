@@ -11,5 +11,4 @@ import AppLayout from "@/layouts/AppLayout.vue"
       <ToastProvider/>
     </n-message-provider>
   </n-config-provider>
-
 </template>
