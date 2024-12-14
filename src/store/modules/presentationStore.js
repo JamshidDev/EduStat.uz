@@ -22,7 +22,7 @@ export const usePresentationStore = defineStore("presentationStore", {
                 id:'region3',
                 name:"Navoiy",
                 tooltipId:'tooltip_3',
-                state:'khorezm',
+                state:'navoiy',
             },
             {
                 id:'region4',
@@ -274,6 +274,48 @@ export const usePresentationStore = defineStore("presentationStore", {
                 tooltipId:'tooltip9_14',
             },
         ],
+        navoiyList:[
+            {
+                name:"Uchquduq tumani",
+                id:"district3_1",
+                tooltipId:'tooltip3_1',
+            },
+            {
+                name:"Zarafshon tumani",
+                id:"district3_2",
+                tooltipId:'tooltip3_2',
+            },
+            {
+                name:"Kanimex tumani",
+                id:"district3_3",
+                tooltipId:'tooltip3_3',
+            },
+            {
+                name:"Nurota tumani",
+                id:"district3_4",
+                tooltipId:'tooltip3_4',
+            },
+            {
+                name:"Xatirchi tumani",
+                id:"district3_5",
+                tooltipId:'tooltip3_5',
+            },
+            {
+                name:"Navbahor tumani",
+                id:"district3_6",
+                tooltipId:'tooltip3_6',
+            },
+            {
+                name:"Karmana tumani",
+                id:"district3_7",
+                tooltipId:'tooltip3_7',
+            },
+            {
+                name:"Qiziltepa tumani",
+                id:"district3_8",
+                tooltipId:'tooltip3_8',
+            },
+        ],
         filterActiveTab:1,
         fullScreen:false,
 
@@ -377,6 +419,34 @@ export const usePresentationStore = defineStore("presentationStore", {
                 })
                 element.addEventListener('mouseover', ()=>{
                     this.hideTashkent()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    console.log(element)
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
+
+            })
+        },
+        hideNavoiy(){
+            this.navoiyList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                console.log(document.getElementById(v.tooltipId))
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                console.log(element)
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        navoiyEvents(){
+            this.navoiyList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this.hideNavoiy()
                     const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
                     nodes[0].innerHTML = v.name
                     nodes[1].innerHTML = 'Shaharlar soni: 2345'

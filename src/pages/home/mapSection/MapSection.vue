@@ -6,6 +6,7 @@ import MapElement from "@/pages/home/mapElement/MapElement.vue"
 import KhorezmRegion from "@/pages/home/mapElement/KhorezmRegion.vue"
 import TashkentCity from "@/pages/home/mapElement/TashkentCity.vue"
 import TashkentRegion from "@/pages/home/mapElement/TashkentRegion.vue"
+import NavoiyRegion from "@/pages/home/mapElement/NavoiyRegion.vue"
 const store = usePresentationStore()
 
 
@@ -33,12 +34,10 @@ const store = usePresentationStore()
         <MapElement v-if="store.activeState === 'uzbekistan'"/>
         <KhorezmRegion v-else-if="store.activeState === 'khorezm'"/>
         <TashkentCity v-else-if="store.activeState === 'tashkentcity'"/>
-        <TashkentRegion v-else-if="store.activeState === 'tashkent'"/>
+        <TashkentRegion  v-else-if="store.activeState === 'tashkent'"/>
+        <NavoiyRegion v-else-if="store.activeState === 'navoiy'" />
       </Transition>
     </div>
-<!--    <n-button @click="onChange">Change</n-button>-->
-
-
   </div>
 </div>
 </template>
