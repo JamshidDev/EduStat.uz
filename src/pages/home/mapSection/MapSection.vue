@@ -5,6 +5,7 @@ import {usePresentationStore} from "@/store/modules/index.js"
 import MapElement from "@/pages/home/mapElement/MapElement.vue"
 import KhorezmRegion from "@/pages/home/mapElement/KhorezmRegion.vue"
 import TashkentCity from "@/pages/home/mapElement/TashkentCity.vue"
+import TashkentRegion from "@/pages/home/mapElement/TashkentRegion.vue"
 const store = usePresentationStore()
 
 
@@ -32,6 +33,7 @@ const store = usePresentationStore()
         <MapElement v-if="store.activeState === 'uzbekistan'"/>
         <KhorezmRegion v-else-if="store.activeState === 'khorezm'"/>
         <TashkentCity v-else-if="store.activeState === 'tashkentcity'"/>
+        <TashkentRegion v-else-if="store.activeState === 'tashkent'"/>
       </Transition>
     </div>
 <!--    <n-button @click="onChange">Change</n-button>-->
@@ -56,20 +58,20 @@ const store = usePresentationStore()
 }
 
 .zoom-enter-active{
-  transition: transform 0.2s ease, opacity 0.225s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 .zoom-leave-active{
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition: transform 0.2s ease, opacity 0.1s ease;
 }
 
 .zoom-enter-from {
   transform: scale(0.5);
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .zoom-leave-to {
-  transform: scale(12);
-  opacity: 0.2;
+  transform: scale(4);
+  opacity: 0.3;
 }
 
 

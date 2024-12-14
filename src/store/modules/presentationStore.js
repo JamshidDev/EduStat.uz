@@ -58,7 +58,7 @@ export const usePresentationStore = defineStore("presentationStore", {
                 id:'region9',
                 name:"Tashkent",
                 tooltipId:'tooltip_9',
-                state:'khorezm',
+                state:'tashkent',
             },
             {
                 id:'region10',
@@ -202,6 +202,78 @@ export const usePresentationStore = defineStore("presentationStore", {
                 tooltipId:'tooltip14_11',
             },
         ],
+        tashkentList:[
+            {
+                name:"Chinoz tumani",
+                id:"district9_1",
+                tooltipId:'tooltip9_1',
+            },
+            {
+                name:"Quyichirchiq tumani",
+                id:"district9_2",
+                tooltipId:'tooltip9_2',
+            },
+            {
+                name:"Oqqo'rg'on tumani",
+                id:"district9_3",
+                tooltipId:'tooltip9_3',
+            },
+            {
+                name:"Bo'ka tumani",
+                id:"district9_4",
+                tooltipId:'tooltip9_4',
+            },
+            {
+                name:"Yangiyo'l tumani",
+                id:"district9_5",
+                tooltipId:'tooltip9_5',
+            },
+            {
+                name:"O'rtachirchiq tumani",
+                id:"district9_6",
+                tooltipId:'tooltip9_6',
+            },
+            {
+                name:"Piskent tumani",
+                id:"district9_7",
+                tooltipId:'tooltip9_7',
+            },
+            {
+                name:"Bekobod tumani",
+                id:"district9_8",
+                tooltipId:'tooltip9_8',
+            },
+            {
+                name:"Zangiota tumani",
+                id:"district9_9",
+                tooltipId:'tooltip9_9',
+            },
+            {
+                name:"Qibray tumani",
+                id:"district9_10",
+                tooltipId:'tooltip9_10',
+            },
+            {
+                name:"Parkent tumani",
+                id:"district9_11",
+                tooltipId:'tooltip9_11',
+            },
+            {
+                name:"Angren tumani",
+                id:"district9_12",
+                tooltipId:'tooltip9_12',
+            },
+            {
+                name:"Bo'stonliq tumani",
+                id:"district9_13",
+                tooltipId:'tooltip9_13',
+            },
+            {
+                name:"Yuqorichirchiq tumani",
+                id:"district9_14",
+                tooltipId:'tooltip9_14',
+            },
+        ],
         filterActiveTab:1,
         fullScreen:false,
 
@@ -282,6 +354,34 @@ export const usePresentationStore = defineStore("presentationStore", {
                     nodes[0].innerHTML = v.name
                     nodes[1].innerHTML = 'Shaharlar soni: 2345'
                     nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
+
+            })
+        },
+        hideTashkent(){
+            this.tashkentList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                console.log(document.getElementById(v.tooltipId))
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                console.log(element)
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        tashkentEvents(){
+            this.tashkentList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this.hideTashkent()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    console.log(element)
                     element.style.fill = '#51A8FE'
                     document.getElementById(v.tooltipId).style.visibility = 'visible'
                 })
