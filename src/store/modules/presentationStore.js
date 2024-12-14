@@ -82,7 +82,7 @@ export const usePresentationStore = defineStore("presentationStore", {
                 tooltipId:'tooltip_14',
             },
         ],
-        activeState:'khorezm',
+        activeState:'uzbekistan',
         korezmDistrict:[
             {
                 name:"Gurlan tumani",
