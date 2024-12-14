@@ -26,12 +26,12 @@ const store = usePresentationStore()
         </n-tab-pane>
       </n-tabs>
     </div>
-    <div class="w-full flex justify-center items-center" style="height: calc(100vh - 40px)">
+    <div class="w-full flex justify-center items-center overflow-hidden" style="height: calc(100vh - 40px)">
 
       <Transition name="zoom" mode="out-in">
         <MapElement v-if="store.activeState === 'uzbekistan'"/>
         <KhorezmRegion v-else-if="store.activeState === 'khorezm'"/>
-        <TashkentCity v-else-if="store.activeState === 'tashkent'"/>
+        <TashkentCity v-else-if="store.activeState === 'tashkentcity'"/>
       </Transition>
     </div>
 <!--    <n-button @click="onChange">Change</n-button>-->
@@ -55,18 +55,21 @@ const store = usePresentationStore()
  }
 }
 
-.zoom-enter-active, .zoom-leave-active {
-  transition: transform 0.225s ease, opacity 0.225s ease;
+.zoom-enter-active{
+  transition: transform 0.2s ease, opacity 0.225s ease;
+}
+.zoom-leave-active{
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .zoom-enter-from {
-  transform: scale(0.21);
+  transform: scale(0.5);
   opacity: 0.3;
 }
 
 .zoom-leave-to {
-  transform: scale(0.21);
-  opacity: 0.3;
+  transform: scale(12);
+  opacity: 0.2;
 }
 
 

@@ -10,76 +10,85 @@ export const usePresentationStore = defineStore("presentationStore", {
                 id:'region1',
                 name:"Qoraqolpog'iston",
                 tooltipId:'tooltip_1',
-                coords:{
-                    x:154,
-                    y:11,
-                    zoom:2
-                }
+                state:'khorezm',
             },
             {
                 id:'region2',
                 name:"Xorazm",
-                tooltipId:'tooltip_2'
+                tooltipId:'tooltip_2',
+                state:'khorezm',
             },
             {
                 id:'region3',
                 name:"Navoiy",
-                tooltipId:'tooltip_3'
+                tooltipId:'tooltip_3',
+                state:'khorezm',
             },
             {
                 id:'region4',
                 name:"Buxoro",
-                tooltipId:'tooltip_4'
+                tooltipId:'tooltip_4',
+                state:'khorezm',
             },
             {
                 id:'region5',
                 name:"Samarqand",
-                tooltipId:'tooltip_5'
+                tooltipId:'tooltip_5',
+                state:'khorezm',
             },
             {
                 id:'region6',
                 name:"Jizzax",
-                tooltipId:'tooltip_6'
+                tooltipId:'tooltip_6',
+                state:'khorezm',
             },
             {
                 id:'region7',
                 name:"Qashqadaryo",
-                tooltipId:'tooltip_7'
+                tooltipId:'tooltip_7',
+                state:'khorezm',
             },
             {
                 id:'region8',
                 name:"Surxandaryo",
-                tooltipId:'tooltip_8'
+                tooltipId:'tooltip_8',
+                state:'khorezm',
             },
             {
                 id:'region9',
                 name:"Tashkent",
                 tooltipId:'tooltip_9',
+                state:'khorezm',
             },
             {
                 id:'region10',
                 name:"Farg'ona",
                 tooltipId:'tooltip_10',
+                state:'khorezm',
             },
             {
                 id:'region11',
                 name:"Andijon",
                 tooltipId:'tooltip_11',
+                state:'khorezm',
             },
             {
                 id:'region12',
                 name:"Sirdaryo",
                 tooltipId:'tooltip_12',
+                state:'khorezm',
             },
             {
                 id:'region13',
                 name:"Namangan",
                 tooltipId:'tooltip_13',
+                state:'khorezm',
             },
             {
                 id:'region14',
                 name:"Toshkent shahar",
                 tooltipId:'tooltip_14',
+                state:'tashkentcity',
             },
         ],
         activeState:'uzbekistan',
@@ -88,6 +97,7 @@ export const usePresentationStore = defineStore("presentationStore", {
                 name:"Gurlan tumani",
                 id:"district2_1",
                 tooltipId:'tooltip2_1',
+
             },
             {
                 name:"Shovotr tumani",
@@ -135,24 +145,63 @@ export const usePresentationStore = defineStore("presentationStore", {
                 tooltipId:'tooltip2_10',
             },
         ],
-
-        panning:false,
-        scale:1,
-        pointX:0,
-        pointY:0,
-        start:{
-            x:0,
-            y:0,
-        },
-        zoo_element:null,
-        zoo_element_container:null,
-
-        kharezm_element:null,
-        kharezmCoords:{
-            x:0,
-            y:0,
-            zoom:1,
-        },
+        tashkentCity:[
+            {
+              name:'Olmazor',
+              id:"district14_1",
+              tooltipId:'tooltip14_1',
+            },
+            {
+                name:'Yunusobod',
+                id:"district14_2",
+                tooltipId:'tooltip14_2',
+            },
+            {
+                name:"M.Ulug'bek",
+                id:"district14_3",
+                tooltipId:'tooltip14_3',
+            },
+            {
+                name:"Shayxontohur",
+                id:"district14_4",
+                tooltipId:'tooltip14_4',
+            },
+            {
+                name:"Uchtepa",
+                id:"district14_5",
+                tooltipId:'tooltip14_5',
+            },
+            {
+                name:"Chilonzor",
+                id:"district14_6",
+                tooltipId:'tooltip14_6',
+            },
+            {
+                name:"Yakkasaroy",
+                id:"district14_7",
+                tooltipId:'tooltip14_7',
+            },
+            {
+                name:"Mirobod",
+                id:"district14_8",
+                tooltipId:'tooltip14_8',
+            },
+            {
+                name:"Yashnobod",
+                id:"district14_9",
+                tooltipId:'tooltip14_9',
+            },
+            {
+                name:"Sirg'ali",
+                id:"district14_10",
+                tooltipId:'tooltip14_10',
+            },
+            {
+                name:"Bektemir",
+                id:"district14_11",
+                tooltipId:'tooltip14_11',
+            },
+        ],
         filterActiveTab:1,
         fullScreen:false,
 
@@ -178,7 +227,7 @@ export const usePresentationStore = defineStore("presentationStore", {
                     tooltip.style.visibility = 'visible'
                 })
                 element.addEventListener('click',()=>{
-                    this.changeState('khorezm')
+                    this.changeState(v.state)
                 })
             })
         },
@@ -213,6 +262,33 @@ export const usePresentationStore = defineStore("presentationStore", {
                 element.style.fill = '#BFE2C8'
             })
         },
+
+        hideTashkentCity(){
+            this.tashkentCity.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        tashkentCityEvents(){
+            this.tashkentCity.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this.hideTashkentCity()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
+
+            })
+        },
+
         changeState(state){
             this.activeState = state
         }
