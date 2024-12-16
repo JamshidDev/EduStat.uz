@@ -7,6 +7,10 @@ import KhorezmRegion from "@/pages/home/mapElement/KhorezmRegion.vue"
 import TashkentCity from "@/pages/home/mapElement/TashkentCity.vue"
 import TashkentRegion from "@/pages/home/mapElement/TashkentRegion.vue"
 import NavoiyRegion from "@/pages/home/mapElement/NavoiyRegion.vue"
+import BuxoroRegion from "@/pages/home/mapElement/BuxoroRegion.vue"
+import Qoraqolpoq from "@/pages/home/mapElement/Qoraqolpoq.vue"
+import SamarqandRegion from "@/pages/home/mapElement/SamarqandRegion.vue"
+import QashqadaryoRegion from "@/pages/home/mapElement/QashqadaryoRegion.vue"
 const store = usePresentationStore()
 
 
@@ -36,6 +40,10 @@ const store = usePresentationStore()
         <TashkentCity v-else-if="store.activeState === 'tashkentcity'"/>
         <TashkentRegion  v-else-if="store.activeState === 'tashkent'"/>
         <NavoiyRegion v-else-if="store.activeState === 'navoiy'" />
+        <BuxoroRegion v-else-if="store.activeState === 'buxoro'" />
+        <Qoraqolpoq v-else-if="store.activeState === 'qoraqolpoq'" />
+        <SamarqandRegion v-else-if="store.activeState === 'samarqand'" />
+        <QashqadaryoRegion v-else-if="store.activeState === 'qashqadaryo'" />
       </Transition>
     </div>
   </div>

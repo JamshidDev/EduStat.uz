@@ -10,7 +10,7 @@ export const usePresentationStore = defineStore("presentationStore", {
                 id:'region1',
                 name:"Qoraqolpog'iston",
                 tooltipId:'tooltip_1',
-                state:'khorezm',
+                state:'qoraqolpoq',
             },
             {
                 id:'region2',
@@ -28,13 +28,13 @@ export const usePresentationStore = defineStore("presentationStore", {
                 id:'region4',
                 name:"Buxoro",
                 tooltipId:'tooltip_4',
-                state:'khorezm',
+                state:'buxoro',
             },
             {
                 id:'region5',
                 name:"Samarqand",
                 tooltipId:'tooltip_5',
-                state:'khorezm',
+                state:'samarqand',
             },
             {
                 id:'region6',
@@ -46,7 +46,7 @@ export const usePresentationStore = defineStore("presentationStore", {
                 id:'region7',
                 name:"Qashqadaryo",
                 tooltipId:'tooltip_7',
-                state:'khorezm',
+                state:'qashqadaryo',
             },
             {
                 id:'region8',
@@ -316,6 +316,286 @@ export const usePresentationStore = defineStore("presentationStore", {
                 tooltipId:'tooltip3_8',
             },
         ],
+        buxoroList:[
+            {
+                name:"Gala-Osiyo tumani",
+                id:"district4_1",
+                tooltipId:'tooltip4_1',
+            },
+            {
+                name:"Qorako'l tumani",
+                id:"district4_2",
+                tooltipId:'tooltip4_2',
+            },
+            {
+                name:"Jondor tumani",
+                id:"district4_3",
+                tooltipId:'tooltip4_3',
+            },
+            {
+                name:"Peshku tumani",
+                id:"district4_4",
+                tooltipId:'tooltip4_4',
+            },
+            {
+                name:"Ramiton tumani",
+                id:"district4_5",
+                tooltipId:'tooltip4_5',
+            },
+            {
+                name:"Vobkent tumani",
+                id:"district4_6",
+                tooltipId:'tooltip4_6',
+            },
+            {
+                name:"Shofirkon tumani",
+                id:"district4_7",
+                tooltipId:'tooltip4_7',
+            },
+            {
+                name:"Buxoro shahar",
+                id:"district4_8",
+                tooltipId:'tooltip4_8',
+            },
+            {
+                name:"Kogon tumani",
+                id:"district4_9",
+                tooltipId:'tooltip4_9',
+            },
+            {
+                name:"Qoravulbozor tumani",
+                id:"district4_10",
+                tooltipId:'tooltip4_10',
+            },
+            {
+                name:"Buxoro tumani",
+                id:"district4_11",
+                tooltipId:'tooltip4_11',
+            },
+            {
+                name:"G'ijduvon tumani",
+                id:"district4_12",
+                tooltipId:'tooltip4_12',
+            },
+            {
+                name:"Olot tumani",
+                id:"district4_13",
+                tooltipId:'tooltip4_13',
+            },
+        ],
+        qoraqolpoqList:[
+            {
+                name:"Qoʼngʼirot tumani",
+                id:"district1_1",
+                tooltipId:'tooltip1_1',
+            },
+            {
+                name:"Mo'ynoq tumani",
+                id:"district1_2",
+                tooltipId:'tooltip1_2',
+            },
+            {
+                name:"Taxtako'pir tumani",
+                id:"district1_3",
+                tooltipId:'tooltip1_3',
+            },
+            {
+                name:"Chimboy tumani",
+                id:"district1_4",
+                tooltipId:'tooltip1_4',
+            },
+            {
+                name:"Kegeyli tumani",
+                id:"district1_5",
+                tooltipId:'tooltip1_5',
+            },
+            {
+                name:"Qorao'zak tumani",
+                id:"district1_6",
+                tooltipId:'tooltip1_6',
+            },
+            {
+                name:"Nukus shahri",
+                id:"district1_7",
+                tooltipId:'tooltip1_7',
+            },
+            {
+                name:"Qonliko'l tumani",
+                id:"district1_8",
+                tooltipId:'tooltip1_8',
+            },
+            {
+                name:"Shumanay tumani",
+                id:"district1_9",
+                tooltipId:'tooltip1_9',
+            },
+            {
+                name:"Xo'jayli tumani",
+                id:"district1_10",
+                tooltipId:'tooltip1_10',
+            },
+            {
+                name:"Amudaryo tumani",
+                id:"district1_11",
+                tooltipId:'tooltip1_11',
+            },
+            {
+                name:"Beruniy tumani",
+                id:"district1_12",
+                tooltipId:'tooltip1_12',
+            },
+            {
+                name:"Ellikqa'la tumani",
+                id:"district1_13",
+                tooltipId:'tooltip1_13',
+            },
+            {
+                name:"To'rtko'l tumani",
+                id:"district1_14",
+                tooltipId:'tooltip1_14',
+            },
+        ],
+        samarqandList:[
+            {
+                name:"Nurobod tumani",
+                id:"district5_1",
+                tooltipId:'tooltip5_1',
+            },
+            {
+                name:"Paxtachi tumani",
+                id:"district5_2",
+                tooltipId:'tooltip5_2',
+            },
+            {
+                name:"Narpay tumani",
+                id:"district5_3",
+                tooltipId:'tooltip5_3',
+            },
+            {
+                name:"Kattaqo'rg'on tumani",
+                id:"district5_4",
+                tooltipId:'tooltip5_4',
+            },
+            {
+                name:"Pastdarg'om tumani",
+                id:"district5_5",
+                tooltipId:'tooltip5_5',
+            },
+            {
+                name:"Ishtixon tumani",
+                id:"district5_6",
+                tooltipId:'tooltip5_6',
+            },
+            {
+                name:"Qo'shrabod tumani",
+                id:"district5_7",
+                tooltipId:'tooltip5_7',
+            },
+            {
+                name:"Poyariq tumani",
+                id:"district5_8",
+                tooltipId:'tooltip5_8',
+            },
+            {
+                name:"Jomboy tumani",
+                id:"district5_9",
+                tooltipId:'tooltip5_9',
+            },
+            {
+                name:"Bulung'ur tumani",
+                id:"district5_10",
+                tooltipId:'tooltip5_10',
+            },
+            {
+                name:"Toyloq tumani",
+                id:"district5_11",
+                tooltipId:'tooltip5_11',
+            },
+            {
+                name:"Urgut tumani",
+                id:"district5_12",
+                tooltipId:'tooltip5_12',
+            },
+            {
+                name:"Samarqand tumani",
+                id:"district5_13",
+                tooltipId:'tooltip5_13',
+            },
+            {
+                name:"Oqdaryo tumani",
+                id:"district5_14",
+                tooltipId:'tooltip5_14',
+            },
+        ],
+        qashqadaryoList:[
+            {
+                name:"Mirishkor tumani",
+                id:"district7_1",
+                tooltipId:'tooltip1_1',
+            },
+            {
+                name:"Muborak tumani",
+                id:"district7_2",
+                tooltipId:'tooltip1_2',
+            },
+            {
+                name:"Nishon tumani",
+                id:"district7_3",
+                tooltipId:'tooltip1_3',
+            },
+            {
+                name:"Kasbi tumani",
+                id:"district7_4",
+                tooltipId:'tooltip1_4',
+            },
+            {
+                name:"Koson tumani",
+                id:"district7_5",
+                tooltipId:'tooltip1_5',
+            },
+            {
+                name:"Qarshi tumani",
+                id:"district7_6",
+                tooltipId:'tooltip1_6',
+            },
+            {
+                name:"G'uzor tumani",
+                id:"district7_7",
+                tooltipId:'tooltip1_7',
+            },
+            {
+                name:"Chiroqchi tumani",
+                id:"district7_8",
+                tooltipId:'tooltip1_8',
+            },
+            {
+                name:"Qamashi tumani",
+                id:"district7_9",
+                tooltipId:'tooltip1_9',
+            },
+            {
+                name:"Dexqonobod tumani",
+                id:"district7_10",
+                tooltipId:'tooltip1_10',
+            },
+            {
+                name:"Yakkabog' tumani",
+                id:"district7_11",
+                tooltipId:'tooltip1_11',
+            },
+            {
+                name:"Kitob tumani",
+                id:"district7_12",
+                tooltipId:'tooltip1_12',
+            },
+            {
+                name:"Shaxrisabz tumani",
+                id:"district7_13",
+                tooltipId:'tooltip1_13',
+            },
+
+        ],
+
         filterActiveTab:1,
         fullScreen:false,
 
@@ -405,9 +685,7 @@ export const usePresentationStore = defineStore("presentationStore", {
         hideTashkent(){
             this.tashkentList.forEach((v)=>{
                 const element = document.getElementById(v.id)
-                console.log(document.getElementById(v.tooltipId))
                 document.getElementById(v.tooltipId).style.visibility = 'hidden'
-                console.log(element)
                 element.style.fill = '#BFE2C8'
             })
         },
@@ -430,15 +708,6 @@ export const usePresentationStore = defineStore("presentationStore", {
 
             })
         },
-        hideNavoiy(){
-            this.navoiyList.forEach((v)=>{
-                const element = document.getElementById(v.id)
-                console.log(document.getElementById(v.tooltipId))
-                document.getElementById(v.tooltipId).style.visibility = 'hidden'
-                console.log(element)
-                element.style.fill = '#BFE2C8'
-            })
-        },
         navoiyEvents(){
             this.navoiyList.forEach((v)=>{
                 const element = document.getElementById(v.id)
@@ -451,7 +720,88 @@ export const usePresentationStore = defineStore("presentationStore", {
                     nodes[0].innerHTML = v.name
                     nodes[1].innerHTML = 'Shaharlar soni: 2345'
                     nodes[2].innerHTML = 'Qishloqlar soni: 4590'
-                    console.log(element)
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
+
+            })
+        },
+        hideNavoiy(){
+            this.navoiyList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        hideBuxoro(){
+            this.buxoroList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        buxoroEvents(){
+            this.buxoroList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this.hideBuxoro()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
+
+            })
+        },
+        hideQoraqolpoq(){
+            this.qoraqolpoqList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        qoraqolpoqEvents(){
+            this.qoraqolpoqList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this.hideQoraqolpoq()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
+
+            })
+        },
+        hideSamarqand(){
+            this.samarqandList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        samarqandEvents(){
+            this.samarqandList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this.hideSamarqand()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
                     element.style.fill = '#51A8FE'
                     document.getElementById(v.tooltipId).style.visibility = 'visible'
                 })
