@@ -40,7 +40,7 @@ export const usePresentationStore = defineStore("presentationStore", {
                 id:'region6',
                 name:"Jizzax",
                 tooltipId:'tooltip_6',
-                state:'khorezm',
+                state:'jizzax',
             },
             {
                 id:'region7',
@@ -52,7 +52,7 @@ export const usePresentationStore = defineStore("presentationStore", {
                 id:'region8',
                 name:"Surxandaryo",
                 tooltipId:'tooltip_8',
-                state:'khorezm',
+                state:'surxandaryo',
             },
             {
                 id:'region9',
@@ -531,69 +531,178 @@ export const usePresentationStore = defineStore("presentationStore", {
             {
                 name:"Mirishkor tumani",
                 id:"district7_1",
-                tooltipId:'tooltip1_1',
+                tooltipId:'tooltip7_1',
             },
             {
                 name:"Muborak tumani",
                 id:"district7_2",
-                tooltipId:'tooltip1_2',
+                tooltipId:'tooltip7_2',
             },
             {
                 name:"Nishon tumani",
                 id:"district7_3",
-                tooltipId:'tooltip1_3',
+                tooltipId:'tooltip7_3',
             },
             {
                 name:"Kasbi tumani",
                 id:"district7_4",
-                tooltipId:'tooltip1_4',
+                tooltipId:'tooltip7_4',
             },
             {
                 name:"Koson tumani",
                 id:"district7_5",
-                tooltipId:'tooltip1_5',
+                tooltipId:'tooltip7_5',
             },
             {
                 name:"Qarshi tumani",
                 id:"district7_6",
-                tooltipId:'tooltip1_6',
+                tooltipId:'tooltip7_6',
             },
             {
                 name:"G'uzor tumani",
                 id:"district7_7",
-                tooltipId:'tooltip1_7',
+                tooltipId:'tooltip7_7',
             },
             {
                 name:"Chiroqchi tumani",
                 id:"district7_8",
-                tooltipId:'tooltip1_8',
+                tooltipId:'tooltip7_8',
             },
             {
                 name:"Qamashi tumani",
                 id:"district7_9",
-                tooltipId:'tooltip1_9',
+                tooltipId:'tooltip7_9',
             },
             {
                 name:"Dexqonobod tumani",
                 id:"district7_10",
-                tooltipId:'tooltip1_10',
+                tooltipId:'tooltip7_10',
             },
             {
                 name:"Yakkabog' tumani",
                 id:"district7_11",
-                tooltipId:'tooltip1_11',
+                tooltipId:'tooltip7_11',
             },
             {
                 name:"Kitob tumani",
                 id:"district7_12",
-                tooltipId:'tooltip1_12',
+                tooltipId:'tooltip7_12',
             },
             {
                 name:"Shaxrisabz tumani",
                 id:"district7_13",
-                tooltipId:'tooltip1_13',
+                tooltipId:'tooltip7_13',
             },
 
+        ],
+        surxandaryoList:[
+            {
+                name:"Sherobod tumani",
+                id:"district8_1",
+                tooltipId:'tooltip8_1',
+            },
+            {
+                name:"Boysun tumani",
+                id:"district8_2",
+                tooltipId:'tooltip8_2',
+            },
+            {
+                name:"Jarqo'rg'on tumani",
+                id:"district8_3",
+                tooltipId:'tooltip8_3',
+            },
+            {
+                name:"Termiz tumani",
+                id:"district8_4",
+                tooltipId:'tooltip8_4',
+            },
+            {
+                name:"Qumqo'rg'on tumani",
+                id:"district8_5",
+                tooltipId:'tooltip8_5',
+            },
+            {
+                name:"Qiziriq tumani",
+                id:"district8_6",
+                tooltipId:'tooltip8_6',
+            },
+            {
+                name:"Denov tumani",
+                id:"district8_7",
+                tooltipId:'tooltip8_7',
+            },
+            {
+                name:"Uzun tumani",
+                id:"district8_8",
+                tooltipId:'tooltip8_8',
+            },
+            {
+                name:"Sariosiyo tumani",
+                id:"district8_9",
+                tooltipId:'tooltip8_9',
+            },
+        ],
+        jizzaxList:[
+            {
+                name:"Forish tumani",
+                id:"district6_1",
+                tooltipId:'tooltip6_1',
+            },
+            {
+                name:"G'allaorol tumani",
+                id:"district6_2",
+                tooltipId:'tooltip6_2',
+            },
+            {
+                name:"Baxmal tumani",
+                id:"district6_3",
+                tooltipId:'tooltip6_3',
+            },
+            {
+                name:"Zomin tumani",
+                id:"district6_4",
+                tooltipId:'tooltip6_4',
+            },
+            {
+                name:"Jizzax tumani",
+                id:"district6_5",
+                tooltipId:'tooltip6_5',
+            },
+            {
+                name:"Yangiobod tumani",
+                id:"district6_6",
+                tooltipId:'tooltip6_6',
+            },
+            {
+                name:"Zarbdor tumani",
+                id:"district6_7",
+                tooltipId:'tooltip6_7',
+            },
+            {
+                name:"Paxtakor tumani",
+                id:"district6_8",
+                tooltipId:'tooltip6_8',
+            },
+            {
+                name:"Zafarobod tumani",
+                id:"district6_9",
+                tooltipId:'tooltip6_9',
+            },
+            {
+                name:"Arnasoy tumani",
+                id:"district6_10",
+                tooltipId:'tooltip6_10',
+            },
+            {
+                name:"Do'stlik tumani",
+                id:"district6_11",
+                tooltipId:'tooltip6_11',
+            },
+            {
+                name:"Mirzacho'l tumani",
+                id:"district6_12",
+                tooltipId:'tooltip6_12',
+            },
         ],
 
         filterActiveTab:1,
@@ -808,6 +917,83 @@ export const usePresentationStore = defineStore("presentationStore", {
 
             })
         },
+        hideQashqadaryo(){
+            this.qashqadaryoList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        qashqadaryoEvents(){
+            this.qashqadaryoList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this.hideQashqadaryo()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
+
+            })
+        },
+        hideSurxandaryo(){
+            this.surxandaryoList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        surxandaryoEvents(){
+            this.surxandaryoList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this.hideSurxandaryo()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
+
+            })
+        },
+        hideJizzax(){
+            this.jizzaxList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        jizzaxEvents(){
+            this.jizzaxList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this.hideJizzax()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
+
+            })
+        },
+
+
 
         changeState(state){
             this.activeState = state

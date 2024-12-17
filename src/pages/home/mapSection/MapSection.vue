@@ -11,6 +11,8 @@ import BuxoroRegion from "@/pages/home/mapElement/BuxoroRegion.vue"
 import Qoraqolpoq from "@/pages/home/mapElement/Qoraqolpoq.vue"
 import SamarqandRegion from "@/pages/home/mapElement/SamarqandRegion.vue"
 import QashqadaryoRegion from "@/pages/home/mapElement/QashqadaryoRegion.vue"
+import SurxandaryoRegion from "@/pages/home/mapElement/SurxandaryoRegion.vue"
+import JizzaxRegion from "@/pages/home/mapElement/JizzaxRegion.vue"
 const store = usePresentationStore()
 
 
@@ -44,6 +46,8 @@ const store = usePresentationStore()
         <Qoraqolpoq v-else-if="store.activeState === 'qoraqolpoq'" />
         <SamarqandRegion v-else-if="store.activeState === 'samarqand'" />
         <QashqadaryoRegion v-else-if="store.activeState === 'qashqadaryo'" />
+        <SurxandaryoRegion v-else-if="store.activeState === 'surxandaryo'" />
+        <JizzaxRegion v-else-if="store.activeState === 'jizzax'" />
       </Transition>
     </div>
   </div>
