@@ -14,6 +14,7 @@ import QashqadaryoRegion from "@/pages/home/mapElement/QashqadaryoRegion.vue"
 import SurxandaryoRegion from "@/pages/home/mapElement/SurxandaryoRegion.vue"
 import JizzaxRegion from "@/pages/home/mapElement/JizzaxRegion.vue"
 import SirdaryoRegion from "@/pages/home/mapElement/SirdaryoRegion.vue"
+import MapText from "@/pages/home/mapElement/MapText.vue"
 
 const store = usePresentationStore()
 </script>
@@ -35,7 +36,7 @@ const store = usePresentationStore()
       </n-tabs>
     </div>
     <div class="w-full flex justify-center items-center overflow-hidden" style="height: calc(100vh - 40px)">
-
+      <MapText/>
       <Transition name="zoom" mode="out-in">
         <MapElement v-if="store.activeState === 'uzbekistan'"/>
         <KhorezmRegion v-else-if="store.activeState === 'khorezm'"/>

@@ -1,7 +1,5 @@
 
 import {defineStore} from "pinia"
-import router from "@/router"
-import {regionData} from "@/pages/statistic/resource/data.js"
 
 export const usePresentationStore = defineStore("presentationStore", {
     state:()=>({
@@ -14,31 +12,31 @@ export const usePresentationStore = defineStore("presentationStore", {
             },
             {
                 id:'region2',
-                name:"Xorazm",
+                name:"Xorazm viloyati",
                 tooltipId:'tooltip_2',
                 state:'khorezm',
             },
             {
                 id:'region3',
-                name:"Navoiy",
+                name:"Navoiy viloyati",
                 tooltipId:'tooltip_3',
                 state:'navoiy',
             },
             {
                 id:'region4',
-                name:"Buxoro",
+                name:"Buxoro viloyati",
                 tooltipId:'tooltip_4',
                 state:'buxoro',
             },
             {
                 id:'region5',
-                name:"Samarqand",
+                name:"Samarqand viloyati",
                 tooltipId:'tooltip_5',
                 state:'samarqand',
             },
             {
                 id:'region6',
-                name:"Jizzax",
+                name:"Jizzax viloyati",
                 tooltipId:'tooltip_6',
                 state:'jizzax',
             },
@@ -92,6 +90,7 @@ export const usePresentationStore = defineStore("presentationStore", {
             },
         ],
         activeState:'uzbekistan',
+        mapText:"Respublika bo'yicha",
         korezmDistrict:[
             {
                 name:"Gurlan tumani",
@@ -1059,11 +1058,20 @@ export const usePresentationStore = defineStore("presentationStore", {
 
             })
         },
+        changeMapText(state){
+            let region = this.regionList.filter((v)=>v.state === state)
+            if(region.length>0){
+                this.mapText = region[0].name
+            }else{
+                this.mapText = "Respublika bo'yicha"
+            }
+        },
 
 
 
         changeState(state){
             this.activeState = state
+            this.changeMapText(state)
         }
 
     }
