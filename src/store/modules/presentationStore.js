@@ -76,7 +76,7 @@ export const usePresentationStore = defineStore("presentationStore", {
                 id:'region12',
                 name:"Sirdaryo",
                 tooltipId:'tooltip_12',
-                state:'khorezm',
+                state:'sirdaryo',
             },
             {
                 id:'region13',
@@ -704,6 +704,48 @@ export const usePresentationStore = defineStore("presentationStore", {
                 tooltipId:'tooltip6_12',
             },
         ],
+        sirdaryoList:[
+            {
+                name:"Sardoba tumani",
+                id:"district12_1",
+                tooltipId:'tooltip12_1',
+            },
+            {
+                name:"Oqoltin tumani",
+                id:"district12_2",
+                tooltipId:'tooltip12_2',
+            },
+            {
+                name:"Xovos tumani",
+                id:"district12_3",
+                tooltipId:'tooltip12_3',
+            },
+            {
+                name:"Mirzaobod tumani",
+                id:"district12_4",
+                tooltipId:'tooltip12_4',
+            },
+            {
+                name:"boyovut tumani",
+                id:"district12_5",
+                tooltipId:'tooltip12_5',
+            },
+            {
+                name:"Guliston tumani",
+                id:"district12_6",
+                tooltipId:'tooltip12_6',
+            },
+            {
+                name:"Sayxunobod tumani",
+                id:"district12_7",
+                tooltipId:'tooltip12_7',
+            },
+            {
+                name:"Sirdaryo shahar",
+                id:"district12_8",
+                tooltipId:'tooltip12_8',
+            },
+        ],
 
         filterActiveTab:1,
         fullScreen:false,
@@ -982,6 +1024,31 @@ export const usePresentationStore = defineStore("presentationStore", {
                 })
                 element.addEventListener('mouseover', ()=>{
                     this.hideJizzax()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
+
+            })
+        },
+        hideSirdaryo(){
+            this.sirdaryoList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        sirdaryoEvents(){
+            this.sirdaryoList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this.hideSirdaryo()
                     const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
                     nodes[0].innerHTML = v.name
                     nodes[1].innerHTML = 'Shaharlar soni: 2345'

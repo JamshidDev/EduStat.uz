@@ -13,9 +13,9 @@ import SamarqandRegion from "@/pages/home/mapElement/SamarqandRegion.vue"
 import QashqadaryoRegion from "@/pages/home/mapElement/QashqadaryoRegion.vue"
 import SurxandaryoRegion from "@/pages/home/mapElement/SurxandaryoRegion.vue"
 import JizzaxRegion from "@/pages/home/mapElement/JizzaxRegion.vue"
+import SirdaryoRegion from "@/pages/home/mapElement/SirdaryoRegion.vue"
+
 const store = usePresentationStore()
-
-
 </script>
 
 <template>
@@ -48,6 +48,7 @@ const store = usePresentationStore()
         <QashqadaryoRegion v-else-if="store.activeState === 'qashqadaryo'" />
         <SurxandaryoRegion v-else-if="store.activeState === 'surxandaryo'" />
         <JizzaxRegion v-else-if="store.activeState === 'jizzax'" />
+        <SirdaryoRegion v-else-if="store.activeState === 'sirdaryo'" />
       </Transition>
     </div>
   </div>
