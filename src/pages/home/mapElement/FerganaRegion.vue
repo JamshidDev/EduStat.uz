@@ -10,7 +10,7 @@ onMounted(()=>{
 
 <template>
 
-  <svg class="cursor-pointer z-10" width="600px" height="428" viewBox="0 0 632 428" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg class="cursor-pointer z-10" width="600px" height="400px" viewBox="0 0 632 428" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="fergana_region">
       <g id="regions" filter="url(#filter0_d_182_554)">
         <g>

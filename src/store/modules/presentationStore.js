@@ -1,4 +1,5 @@
-
+import i18n from "../../i18n/index.js"
+const {t} = i18n.global
 import {defineStore} from "pinia"
 
 export const usePresentationStore = defineStore("presentationStore", {
@@ -952,6 +953,534 @@ export const usePresentationStore = defineStore("presentationStore", {
                 tooltipId:'tooltip10_16',
             },
         ],
+        mapData:[
+            {
+                state:"uzbekistan",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:10750,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:6645119,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:548546,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:3410420,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:3234699,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:4117,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:6633,
+                    },
+                ]
+            },
+            {
+                state:"qoraqolpoq",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:752,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:370829,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:39394,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:188370,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:182459,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:246,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:506,
+                    },
+                ]
+            },
+            {
+                state:"andijon",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:812,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:612475,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:44353,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:313523,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:298952,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:357,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:455,
+                    },
+                ]
+            },
+            {
+                state:"buxoro",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:583,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:337685,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:30930,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:173427,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:164258,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:223,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:360,
+                    },
+                ]
+            },
+            {
+                state:"jizzax",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:585,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:275979,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:25023,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:142343,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:133636,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:177,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:408,
+                    },
+                ]
+            },
+            {
+                state:"qashqadaryo",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:1256,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:673058,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:61222,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:345309,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:327749,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:418,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:838,
+                    },
+                ]
+            },
+            {
+                state:"navoiy",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:379,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:192069,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:21345,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:98015,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:94054,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:128,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:251,
+                    },
+                ]
+            },
+            {
+                state:"namangan",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:766,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:549449,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:41178,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:281712,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:267737,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:403,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:10363,
+                    },
+                ]
+            },
+            {
+                state:"samarqand",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:1323,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:789220,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:62409,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:404135,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:385085,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:387,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:936,
+                    },
+                ]
+            },
+            {
+                state:"surxandaryo",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:987,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:549186,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:48363,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:280942,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:268244,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:336,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:651,
+                    },
+                ]
+            },
+            {
+                state:"sirdaryo",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:337,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:162746,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:13607,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:83696,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:79050,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:107,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:230,
+                    },
+                ]
+            },
+            {
+                state:"tashkent",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:917,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:532672,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:38480,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:273818,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:258854,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:313,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:604,
+                    },
+                ]
+            },
+            {
+                state:"fergana",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:1043,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:705336,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:57765,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:359873,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:345463,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:423,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:620,
+                    },
+                ]
+            },
+            {
+                state:"khorezm",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:581,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:372159,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:34338,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:189603,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:182556,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:170,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:411,
+                    },
+                ]
+            },
+            {
+                state:"tashkentcity",
+                content:[
+                    {
+                        title:"map.content.organizations",
+                        value:429,
+                    },
+                    {
+                        title:"map.content.students",
+                        value:522256,
+                    },
+                    {
+                        title:"map.content.teachers",
+                        value:30139,
+                    },
+                    {
+                        title:"map.content.student_boy",
+                        value:275654,
+                    },
+                    {
+                        title:"map.content.student_girl",
+                        value:246602,
+                    },
+                ],
+                tooltip:[
+                    {
+                        title:"map.content.orgCity",
+                        value:429,
+                    },
+                    {
+                        title:"map.content.orgVillage",
+                        value:0,
+                    },
+                ]
+            },
+        ],
+        sidebarData:[],
 
         filterActiveTab:1,
         fullScreen:false,
@@ -969,13 +1498,19 @@ export const usePresentationStore = defineStore("presentationStore", {
                 element.addEventListener('mouseover', (e) => {
                     this._hiddenAllElement()
                     element.style.fill = '#51A8FE'
-
                     const tooltip = document.getElementById(v.tooltipId)
                     const nodes = document.querySelectorAll(`#${v.tooltipId} text tspan`)
                     nodes[0].innerHTML = v.name
-                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
-                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+
+                    const region =  this.mapData.filter((x)=>x.state ===v.state)
+                    if(region.length === 1){
+                        const {tooltip} = region[0]
+                        nodes[1].innerHTML =t(tooltip[0].title)+ ' : ' + tooltip[0].value
+                        nodes[2].innerHTML = t(tooltip[1].title)+ ' : ' + tooltip[1].value
+                    }
                     tooltip.style.visibility = 'visible'
+
+
                 })
                 element.addEventListener('click',()=>{
                     this.changeState(v.state)
@@ -1340,6 +1875,12 @@ export const usePresentationStore = defineStore("presentationStore", {
 
             })
         },
+        changeSidebarData(state){
+            const region =  this.mapData.filter((x)=>x.state ===state)
+            if(region.length === 1){
+                this.sidebarData = region[0].content
+            }
+        },
 
 
 
@@ -1347,7 +1888,9 @@ export const usePresentationStore = defineStore("presentationStore", {
         changeState(state){
             this.activeState = state
             this.changeMapText(state)
+            this.changeSidebarData(state)
         },
+
         changeMapText(state){
             let region = this.regionList.filter((v)=>v.state === state)
             if(region.length>0){
@@ -1356,6 +1899,7 @@ export const usePresentationStore = defineStore("presentationStore", {
                 this.mapText = "Respublika bo'yicha"
             }
         },
+
 
     }
 })

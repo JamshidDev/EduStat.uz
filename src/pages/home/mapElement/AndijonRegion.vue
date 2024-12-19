@@ -9,7 +9,7 @@ onMounted(()=>{
 </script>
 
 <template>
-  <svg class="cursor-pointer z-10" width="600px" height="375" viewBox="0 0 723 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg class="cursor-pointer z-10" width="600px" height="400px" viewBox="0 0 723 375" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="andijon_region">
       <g id="regions" filter="url(#filter0_d_170_293)">
         <g>

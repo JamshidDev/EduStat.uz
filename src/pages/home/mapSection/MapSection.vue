@@ -26,21 +26,21 @@ const store = usePresentationStore()
 <template>
 <div
     id="map_section"
-    :class="[store.fullScreen && 'fixed top-0 bottom-0 left-0 right-0 z-50']"
-    class="w-full min-h-screen flex bg-surface-ground ">
-  <div class="flex w-full max-w-[1920px] mx-auto">
-    <div class="w-[480px] min-h-full shadow bg-surface-section border border-surface-200 rounded-xl p-4">
+    :class="[store.fullScreen && 'fixed top-0 bottom-0 left-0 right-0 z-50 h-[100vh] pb-0']"
+    class="w-full  flex bg-surface-ground pb-20 h-[80vh]">
+  <div class="flex w-full max-w-[1920px] mx-auto" :class="[store.fullScreen? 'px-0':'px-20']">
+    <div class="w-[480px] min-h-full bg-surface-section rounded-xl p-4">
       <MapContent/>
     </div>
     <div style="width:calc(100% - 480px)" class="min-h-full map_section_effect relative">
-      <div style="width: calc(100% - 8px)" class="bg-white rounded-xl mx-1 border border-surface-100 p-1 shadow">
+      <div style="width: calc(100% - 8px)" class="bg-white rounded-xl mx-1 p-1">
         <n-tabs type="card" animated class="hidden-panel-tab" v-model:value="store.filterActiveTab">
           <n-tab-pane v-for="(item ,idx) in mapFilterList" :key="idx" :name="item.id" :tab="item.name">
             {{item.name}}
           </n-tab-pane>
         </n-tabs>
       </div>
-      <div class="w-full flex justify-center items-center overflow-hidden" style="height: calc(100vh - 40px)">
+      <div class="w-full flex justify-center overflow-hidden" style="height: calc(80vh - 40px)">
         <MapText/>
         <Transition name="zoom" mode="out-in">
           <MapElement v-if="store.activeState === 'uzbekistan'"/>

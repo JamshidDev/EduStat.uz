@@ -13,10 +13,14 @@ const onChangeScreen = ()=>{
 const onChange = ()=>{
   store.changeState('infoGraphic')
 }
+
+onMounted(()=>{
+  store.sidebarData = store.mapData[0].content
+})
 </script>
 
 <template>
-  <div style="height: calc(100vh - 100px)">
+  <div style="height: calc(100% - 70px)">
     <div class="grid grid-cols-12 gap-4">
       <div class="col-span-12">
         <n-input-group class="mt-4">
@@ -50,7 +54,7 @@ const onChange = ()=>{
         </n-input-group>
       </div>
 
-      <template v-for="(item,idx) in 10" :key="idx">
+      <template v-for="(item,idx) in store.sidebarData" :key="idx">
         <div class="col-span-6 bg-[#F3F5FB]">
           <div class="w-full flex bg-[#F3F5FB] border border-surface-200 rounded p-2">
             <div class="flex justify-center items-center rounded bg-primary w-[30px] h-[30px]">
@@ -59,8 +63,8 @@ const onChange = ()=>{
               </n-icon>
             </div>
             <div style="width: calc(100% - 30px)" class="flex flex-col pl-2">
-              <span class="font-bold leading-[1]">17 772 607</span>
-              <span class="text-[#9CAFB7] text-xs leading-[1]">Ta’lim tashkiloti</span>
+              <span class="font-bold leading-[1]">{{item.value}}</span>
+              <span class="text-[#9CAFB7] text-xs leading-[1]">{{$t(item.title)}}</span>
             </div>
           </div>
         </div>

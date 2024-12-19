@@ -45,6 +45,17 @@
         "subtitle": "Uning joriy vaqtdagi raqamlarda aks etgan ifodasi",
         "description": "Har bir statistika ortida bir insonning hayoti yotadi. Mamlakatimizda 2.4 mln o‘quvchi bilim olmoqda – bu esa kelajakni yaratayotgan avloddir. Raqamlar shunchaki fakt emas, ular bizning taraqqiyot yo‘limizning ko‘zgusidir."
     },
+    "map": {
+        "content": {
+            "organizations": "Ta'lim tashkilotlari",
+            "students": "Tahsil olayotganlar",
+            "teachers": "Pedagoklar 14",
+            "student_boy": "O'quvchilar (o'gil bola)",
+            "student_girl": "O'quvchilar (qiz bola)",
+            "orgCity": "Shaharlarda",
+            "orgVillage": "Qishloqlarda"
+        }
+    },
 
     "loginPage":{
         "title":"BOT NEXUS",
