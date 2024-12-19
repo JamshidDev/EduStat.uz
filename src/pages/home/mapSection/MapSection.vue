@@ -15,6 +15,9 @@ import SurxandaryoRegion from "@/pages/home/mapElement/SurxandaryoRegion.vue"
 import JizzaxRegion from "@/pages/home/mapElement/JizzaxRegion.vue"
 import SirdaryoRegion from "@/pages/home/mapElement/SirdaryoRegion.vue"
 import MapText from "@/pages/home/mapElement/MapText.vue"
+import NamanganRegion from "@/pages/home/mapElement/NamanganRegion.vue"
+import AndijonRegion from "@/pages/home/mapElement/AndijonRegion.vue"
+import FerganaRegion from "@/pages/home/mapElement/FerganaRegion.vue"
 
 const store = usePresentationStore()
 </script>
@@ -50,6 +53,9 @@ const store = usePresentationStore()
         <SurxandaryoRegion v-else-if="store.activeState === 'surxandaryo'" />
         <JizzaxRegion v-else-if="store.activeState === 'jizzax'" />
         <SirdaryoRegion v-else-if="store.activeState === 'sirdaryo'" />
+        <NamanganRegion v-else-if="store.activeState === 'namangan'" />
+        <AndijonRegion v-else-if="store.activeState === 'andijon'" />
+        <FerganaRegion v-else-if="store.activeState === 'fergana'" />
       </Transition>
     </div>
   </div>

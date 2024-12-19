@@ -42,45 +42,45 @@ export const usePresentationStore = defineStore("presentationStore", {
             },
             {
                 id:'region7',
-                name:"Qashqadaryo",
+                name:"Qashqadaryo viloyati",
                 tooltipId:'tooltip_7',
                 state:'qashqadaryo',
             },
             {
                 id:'region8',
-                name:"Surxandaryo",
+                name:"Surxandaryo viloyati",
                 tooltipId:'tooltip_8',
                 state:'surxandaryo',
             },
             {
                 id:'region9',
-                name:"Tashkent",
+                name:"Tashkent viloyati",
                 tooltipId:'tooltip_9',
                 state:'tashkent',
             },
             {
                 id:'region10',
-                name:"Farg'ona",
+                name:"Farg'ona viloyati",
                 tooltipId:'tooltip_10',
-                state:'khorezm',
+                state:'fergana',
             },
             {
                 id:'region11',
-                name:"Andijon",
+                name:"Andijon viloyati",
                 tooltipId:'tooltip_11',
-                state:'khorezm',
+                state:'andijon',
             },
             {
                 id:'region12',
-                name:"Sirdaryo",
+                name:"Sirdaryo viloyati",
                 tooltipId:'tooltip_12',
                 state:'sirdaryo',
             },
             {
                 id:'region13',
-                name:"Namangan",
+                name:"Namangan viloyati",
                 tooltipId:'tooltip_13',
-                state:'khorezm',
+                state:'namangan',
             },
             {
                 id:'region14',
@@ -745,6 +745,213 @@ export const usePresentationStore = defineStore("presentationStore", {
                 tooltipId:'tooltip12_8',
             },
         ],
+        namanganList:[
+            {
+                name:"Pop tumani",
+                id:"district13_1",
+                tooltipId:'tooltip13_1',
+            },
+            {
+                name:"chust tumani",
+                id:"district13_2",
+                tooltipId:'tooltip13_2',
+            },
+            {
+                name:"Mingbuloq tumani",
+                id:"district13_3",
+                tooltipId:'tooltip13_3',
+            },
+            {
+                name:"To'raqo'rg'on tumani",
+                id:"district13_4",
+                tooltipId:'tooltip13_4',
+            },
+            {
+                name:"Namangan shahri",
+                id:"district13_5",
+                tooltipId:'tooltip13_5',
+            },
+            {
+                name:"Kosonsoy tumani",
+                id:"district13_6",
+                tooltipId:'tooltip13_6',
+            },
+            {
+                name:"Yangiqo'rg'on tumani",
+                id:"district13_7",
+                tooltipId:'tooltip13_7',
+            },
+            {
+                name:"Chortoq tumani",
+                id:"district13_8",
+                tooltipId:'tooltip13_8',
+            },
+            {
+                name:"Norin tumani",
+                id:"district13_9",
+                tooltipId:'tooltip13_9',
+            },
+            {
+                name:"Uchqo'rg'on tumani",
+                id:"district13_10",
+                tooltipId:'tooltip13_10',
+            },
+
+        ],
+        andijonList:[
+            {
+                name:"Ulug'nor tumani",
+                id:"district11_1",
+                tooltipId:'tooltip11_1',
+            },
+            {
+                name:"Baliqchi tumani",
+                id:"district11_2",
+                tooltipId:'tooltip11_2',
+            },
+            {
+                name:"Bo'z tumani",
+                id:"district11_3",
+                tooltipId:'tooltip11_3',
+            },
+            {
+                name:"Oltinko'l tumani",
+                id:"district11_4",
+                tooltipId:'tooltip11_4',
+            },
+            {
+                name:"Shahrixon tumani",
+                id:"district11_5",
+                tooltipId:'tooltip11_5',
+            },
+            {
+                name:"Asaka tumani",
+                id:"district11_6",
+                tooltipId:'tooltip11_6',
+            },
+            {
+                name:"Marhamat tumani",
+                id:"district11_7",
+                tooltipId:'tooltip11_7',
+            },
+            {
+                name:"Buloqboshi tumani",
+                id:"district11_8",
+                tooltipId:'tooltip11_8',
+            },
+            {
+                name:"Andijon tumani",
+                id:"district11_9",
+                tooltipId:'tooltip11_9',
+            },
+            {
+                name:"Izboskan tumani",
+                id:"district11_10",
+                tooltipId:'tooltip11_10',
+            },
+            {
+                name:"Paxtaobod tumani",
+                id:"district11_11",
+                tooltipId:'tooltip11_11',
+            },
+            {
+                name:"Jalaquduq tumani",
+                id:"district11_12",
+                tooltipId:'tooltip11_12',
+            },
+            {
+                name:"Xo'jaobod tumani",
+                id:"district11_13",
+                tooltipId:'tooltip11_13',
+            },
+            {
+                name:"Qo'rg'ontepa tumani",
+                id:"district11_14",
+                tooltipId:'tooltip11_14',
+            },
+        ],
+        ferganaList:[
+            {
+                name:"Beshariq tumani",
+                id:"district10_1",
+                tooltipId:'tooltip10_1',
+            },
+            {
+                name:"O'zbekiston tumani",
+                id:"district10_2",
+                tooltipId:'tooltip10_2',
+            },
+            {
+                name:"Furqat tumani",
+                id:"district10_3",
+                tooltipId:'tooltip10_3',
+            },
+            {
+                name:"Qo'qon tumani",
+                id:"district10_4",
+                tooltipId:'tooltip10_4',
+            },
+            {
+                name:"Uchko'prik tumani",
+                id:"district10_5",
+                tooltipId:'tooltip10_5',
+            },
+            {
+                name:"Buvayda tumani",
+                id:"district10_6",
+                tooltipId:'tooltip10_6',
+            },
+            {
+                name:"Bog'dod tumani",
+                id:"district10_7",
+                tooltipId:'tooltip10_7',
+            },
+            {
+                name:"Rishton tumani",
+                id:"district10_8",
+                tooltipId:'tooltip10_8',
+            },
+            {
+                name:"Oltiariq tumani",
+                id:"district10_9",
+                tooltipId:'tooltip10_9',
+            },
+            {
+                name:"Yozyovon tumani",
+                id:"district10_10",
+                tooltipId:'tooltip10_10',
+            },
+            {
+                name:"Qo'shtepa tumani",
+                id:"district10_11",
+                tooltipId:'tooltip10_11',
+            },
+            {
+                name:"Farg'ona shahar",
+                id:"district10_12",
+                tooltipId:'tooltip10_12',
+            },
+            {
+                name:"Toshloq tumani",
+                id:"district10_13",
+                tooltipId:'tooltip10_13',
+            },
+            {
+                name:"Quva tumani",
+                id:"district10_14",
+                tooltipId:'tooltip10_14',
+            },
+            {
+                name:"So'x tumani",
+                id:"district10_15",
+                tooltipId:'tooltip10_15',
+            },
+            {
+                name:"Farg'ona tumani",
+                id:"district10_16",
+                tooltipId:'tooltip10_16',
+            },
+        ],
 
         filterActiveTab:1,
         fullScreen:false,
@@ -1058,6 +1265,89 @@ export const usePresentationStore = defineStore("presentationStore", {
 
             })
         },
+        hideNamangan(){
+            this.namanganList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        namanganEvents(){
+            this.namanganList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this.hideNamangan()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
+
+            })
+        },
+        hideAndijon(){
+            this.andijonList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        andijonEvents(){
+            this.andijonList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this.hideAndijon()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
+
+            })
+        },
+        hideFergana(){
+            this.ferganaList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                document.getElementById(v.tooltipId).style.visibility = 'hidden'
+                element.style.fill = '#BFE2C8'
+            })
+        },
+        ferganaEvents(){
+            this.ferganaList.forEach((v)=>{
+                const element = document.getElementById(v.id)
+                element.addEventListener('click', ()=>{
+                    this.changeState('uzbekistan')
+                })
+                element.addEventListener('mouseover', ()=>{
+                    this.hideFergana()
+                    const nodes = document.querySelectorAll(`#${v.tooltipId} g text tspan`)
+                    nodes[0].innerHTML = v.name
+                    nodes[1].innerHTML = 'Shaharlar soni: 2345'
+                    nodes[2].innerHTML = 'Qishloqlar soni: 4590'
+                    element.style.fill = '#51A8FE'
+                    document.getElementById(v.tooltipId).style.visibility = 'visible'
+                })
+
+            })
+        },
+
+
+
+
+        changeState(state){
+            this.activeState = state
+            this.changeMapText(state)
+        },
         changeMapText(state){
             let region = this.regionList.filter((v)=>v.state === state)
             if(region.length>0){
@@ -1066,13 +1356,6 @@ export const usePresentationStore = defineStore("presentationStore", {
                 this.mapText = "Respublika bo'yicha"
             }
         },
-
-
-
-        changeState(state){
-            this.activeState = state
-            this.changeMapText(state)
-        }
 
     }
 })

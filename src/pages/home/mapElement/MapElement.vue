@@ -9,10 +9,9 @@ onMounted(()=>{
 </script>
 
 <template>
-  <svg class="cursor-pointer" width="800px" height="776" viewBox="0 0 1310 776" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="1310" height="776"/>
-    <g id="mapuz">
-      <g id="Uzbekistan" filter="url(#filter0_d_0_1)">
+  <svg class="cursor-pointer z-10" width="800px" height="776" viewBox="0 0 1310 776" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="uzbekistan">
+      <g id="Uzbekistan" filter="url(#filter0_d_52_41)">
         <path id="region10" d="M1197.34 525.202L1197.66 526.138L1195.95 531.888L1195.21 532.999L1194.04 533.209L1192.1 532.669L1190.63 532.032L1189.01 530.957L1188.27 529.66L1189.49 528.319L1191.39 528.226L1192.7 527.635L1195.46 525.74L1197.34 525.202ZM1214.58 500.616L1215.07 500.918L1215.5 501.629L1215 502.611L1213.94 502.86L1212.74 502.677L1211.83 502.336L1211.24 502.214L1210.8 502.275L1209.93 502.531L1206.94 502.302L1203.96 501.639L1201.2 501.783L1198.85 503.942L1197.44 506.814L1196.61 508.043L1195.39 509.111L1191.41 511.262L1190.36 511.547L1188.83 510.936L1188.36 509.56L1188.39 505.853L1187.85 504.018L1186.78 501.971L1185.45 500.905L1184.07 502.036L1183.61 503.765L1183.43 505.329L1182.77 506.371L1180.9 506.539L1177.34 505.89L1175.62 505.278L1174.01 504.349L1172.63 503.143L1172.03 501.807L1171.3 500.723L1167.91 499.76L1165.53 497.716L1164 497.619L1161.63 497.848L1160.38 497.745L1159.33 497.329L1158.55 496.486L1157.87 495.536L1157.11 494.974L1156.03 495.274L1154.85 496.925L1154.18 498.927L1153.11 500.455L1150.72 500.675L1141.93 499.515L1137.53 500.207L1134.79 502.759L1133.23 502.619L1126.53 503.175L1115.74 506.21L1112.5 506.454L1109.31 506.266L1106.26 504.263L1104.9 500.422L1103.89 496.236L1101.88 493.224L1100.21 492.583L1098.77 492.724L1097.35 493.126L1095.69 493.262L1094.1 492.841L1090.33 491.306L1091.36 488.156L1091.14 487.771L1090.49 487.06L1090.33 486.919L1090.37 486.951L1089.38 485.615L1089.24 485.372L1089.12 484.946L1089 483.038L1090.2 481.279L1092.44 479.947L1097.65 478.83L1098.38 478.558L1099.14 477.644L1100.96 474.808L1101.99 473.87L1103.04 473.437L1104.16 473.151L1105.3 472.657L1106.27 471.901L1108.92 468.885L1113.52 465.43L1114.66 464.476L1115.74 463.696L1116.38 463.409L1117.62 463.151L1117.88 462.799L1118.01 462.371L1118.27 461.995L1119.45 461.317L1119.45 461.277L1121.4 460.159L1122.21 459.321L1122.9 458.387L1123.74 457.551L1125.02 456.991L1126.04 456.92L1128.15 457.117L1129.15 456.991L1132.71 454.064L1134.23 454.072L1135.42 454.529L1136.03 454.92L1136.52 455.311L1138.94 455.623L1147.5 455.198L1142.69 461.207L1143.11 461.597L1146.07 461.899L1146.63 462.148L1148.78 464.199L1149.33 464.495L1150.12 464.726L1151.5 464.975L1152.35 465.262L1153.89 466.409L1157.32 468.124L1158.4 468.435L1160.14 468.12L1165.08 463.851L1167.46 460.502L1168.95 459.358L1175.66 456.017L1181.92 454.109L1184.17 457.221L1185.83 460.14L1186.58 461.12L1186.9 461.296L1187.03 459.69L1187.48 459.414L1188.28 459.443L1190.33 460.402L1191.32 460.728L1192.07 460.808L1192.45 460.556L1193.28 460.446L1194.5 460.527L1198.46 461.767L1199.3 462.211L1199.93 462.88L1200.61 463.941L1203.65 467.746L1204.26 468.043L1204.97 468.256L1206.76 468.522L1208.28 468.27L1210.44 468.144L1213.97 469.226L1218.54 470.114L1219.82 469.994L1220.64 469.057L1221.4 468.442L1222.46 469.148L1223.94 471.123L1224.48 471.531L1225.35 471.616L1229.28 472.696L1230.34 473.564L1230.43 474.024L1230.45 474.527L1230.39 475.606L1230.12 477.302L1229.91 478.928L1230.09 480.181L1230.74 482.268L1230.84 482.684L1230.84 482.718L1227.39 482.883L1226.12 483.187L1221.08 485.732L1220.38 486.669L1219.93 488.361L1218.84 490.893L1216.84 492.714L1210.29 495.761L1209.87 497.042L1210.4 498.399L1211.83 499.344L1214.02 500.279L1214.58 500.616ZM1151.29 520.49L1151.67 520.365L1152.5 519.745L1152.9 519.535L1154.83 519.059L1155.79 519.223L1156.37 520.062L1155.86 521.473L1152.36 523.714L1151.13 524.818L1151.3 527.145L1154.63 530.425L1154.48 533.196L1153.68 534.289L1152.63 534.648L1150.09 534.699L1146.5 535.577L1145.39 535.484L1144.5 534.736L1144.32 533.746L1143.95 532.974L1142.52 532.908L1141.67 533.461L1140.63 534.399L1139.56 535.003L1138.61 534.561L1138.48 532.274L1141.72 527.618L1141.37 524.992L1140.5 524.355L1138.48 523.959L1137.49 523.475L1136.63 522.348L1134.76 518.589L1134.34 517.134L1134.43 515.638L1134.87 514.048L1136.18 511.235L1138.55 510.045L1140.27 511.025L1141.53 513.228L1142.58 515.694L1143.87 517.185L1145.92 518.42L1150.17 520.046L1150.42 520.251L1150.72 520.415L1151.29 520.49Z" fill="#BFE2C8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path id="region9" d="M1156.81 322.891L1157.06 322.968L1155.93 326.442L1153.11 328.253L1146.86 329.917L1136.17 337.234L1133.05 337.918L1129.33 337.768L1126.21 338.524L1124.89 341.924L1124.67 347.253L1123.83 348.812L1121.21 349.728L1113.67 350.521L1111.34 351.792L1103.86 357.661L1100.56 361.223L1098.35 365.586L1096.56 368.024L1094.28 369.426L1091.81 370.521L1087.3 373.794L1075.05 380.375L1073.45 382.763L1074.84 385.736L1077.63 387.08L1088.3 388.171L1088.31 388.18L1088.32 388.185L1088.34 388.2L1091.16 389.771L1092.43 390.828L1093.53 392.142L1095.38 395.329L1096.53 396.304L1097.86 396.361L1097 398.529L1096.31 399.703L1092.61 404.223L1092.4 404.739L1092.29 405.41L1092.48 406.467L1092.5 407.885L1092.76 408.369L1093.02 408.699L1095.11 408.969L1095.38 409.705L1095.03 410.986L1094.81 411.558L1093.36 414.358L1093.22 414.912L1093.24 415.519L1093.41 416.135L1093.9 416.875L1095.42 418.746L1096.95 421.13L1097.3 423.146L1097.45 429.938L1096.9 432.049L1096.9 432.063L1095.97 431.131L1092.6 429.845L1089.75 430.535L1087.66 440.177L1083.46 444.675L1077.98 447.698L1070.13 450.55L1062.97 455.591L1049.02 459.602L1047.36 460.364L1045.86 461.517L1042.68 465.205L1040.88 466.675L1038.85 467.244L1036.52 466.454L1035.57 465.659L1034.78 464.705L1033.4 462.546L1032.56 461.623L1030.65 460.475L1029.76 459.741L1026.81 455.538L1025.1 454.074L1022.68 453.858L1021.5 453.193L1020.56 452.271L1019.55 451.521L1018.18 451.38L1015.72 452.12L1014.51 452.732L1013.44 453.557L1011.51 455.836L1010.34 458.208L1009.81 460.938L1009.77 464.287L1010.29 469.124L1009.97 470.354L1008.89 470.96L1004.29 471.312L1001.58 473.016L1001.55 474.893L1004.59 479.604H1004.6L1006.22 484.714L1006.96 486.33L1008.93 489.58L1009.75 491.298L1010.23 493.307L1009.67 497.742L1007.23 498.125L1004.32 497.106L1002.33 497.335L1002.65 500.01L1008.15 504.543V506.683L1005.31 507.878L1001.54 507.766L994.74 505.898L992.139 504.697L992.148 504.673L992.547 503.489L993.627 499.895L993.486 498.572L992.993 497.817L991.913 495.317L993.497 487.012L993.692 486.394L994.141 485.476L994.559 484.802L995.634 483.512L995.95 482.729L995.825 481.915L995.551 481.121L995.398 480.387L994.921 479.808L994.127 479.116L993.971 478.382L995.398 477.655L994.71 477.185L993.958 476.947L993.145 476.896L992.297 476.98L993.154 473.721L993.878 472.465L995.787 471.676L995.755 471.032L995.283 470.388L994.598 470.099L993.871 470.482L993.073 471.224L992.324 471.728L991.737 471.397L991.765 470.722L993.005 469.633L993.286 468.855L992.914 468L991.53 466.942L990.638 464.671L989.242 464.565L986.051 465.129L987.263 463.279L987.543 462.357L986.829 461.966L985.675 462.318L984.62 462.967L983.555 463.282L982.386 462.643L983.387 461.448L983.215 460.22L982.377 459.105L981.353 458.234L980.809 458.064L980.273 458.144L979.745 458.12L979.241 457.668L979.171 457.268L979.311 456.204L979.241 455.804L978.459 454.33L978.052 453.855L977.22 453.257L975.202 452.317L974.686 451.957L974.127 451.26L973.247 449.706L972.571 448.9L971.433 448.14L969.786 447.469L968.12 447.198L966.887 447.654L966.641 446.077L966.418 445.466L966.09 445.476L965.421 445.934L965.018 445.699L964.827 445.029L964.725 442.867L964.479 441.944L963.877 441.15L960.043 437.921L960.732 437.645L963.059 436.71L963.83 435.845L964.585 434.989L965.974 431.326L967.366 427.666L968.395 426.592L969.447 425.517L972.051 424.471L974.643 423.425L975.586 421.934L976.529 420.452L977.007 419.855L977.504 419.262L978.282 419.025L979.063 418.793L980.683 418.599L982.314 418.405L983.671 417.788L985.036 417.181L986.342 416.366L987.633 415.546L988.278 414.963L988.931 414.38L989.228 413.855L989.533 413.323L990.12 408.953L990.715 404.585L990.683 403.831L990.652 403.07L990.543 402.529L990.441 401.992L990.332 401.826L990.227 401.659L990.051 401.54L989.863 401.417L989.512 401.009L989.164 400.605L989.066 400.225L988.961 399.846L989.136 399.522L989.308 399.199L989.621 398.957L989.934 398.725L991.681 397.935L993.428 397.15L994.139 396.945L994.851 396.745L995.558 396.996L996.259 397.253L996.642 396.296L997.025 395.34L997.946 394.507L998.877 393.67L1000.93 392.47L1003 391.275L1003.62 391.152L1004.22 391.038L1005.34 391.414L1006.46 391.781L1007.02 391.711L1007.57 391.634L1009.03 390.777L1010.49 389.915L1011.05 389.773L1011.62 389.63L1013.87 390.011L1016.13 390.388L1016.57 390.144L1017.01 389.915L1016.96 389.439L1016.92 388.964L1016.28 387.897L1015.66 386.84L1015.52 386.354L1015.38 385.864L1015.88 384.658L1016.36 383.452L1017.37 382.779L1018.37 382.108L1020.53 381.479L1022.68 380.854L1026.53 378.078L1030.38 375.291L1031.45 374.141L1032.54 372.991L1033.18 372.53L1033.82 372.064L1038.93 370.763L1044.03 369.464L1048.25 369.317L1052.46 369.176L1054.04 368.562L1055.61 367.949L1056.76 366.704L1057.91 365.465L1058.43 364.75L1058.95 364.036L1059.53 363.599L1060.12 363.166L1062.24 362.449L1064.35 361.741L1067.49 359.617L1070.64 357.482L1071.59 356.455L1072.56 355.433L1075.13 351.365L1077.69 347.299L1078.23 346.782L1078.78 346.27L1079.42 345.924L1080.08 345.586L1080.77 345.36L1081.45 345.137L1082.07 344.839L1082.69 344.54L1083.17 344.045L1083.65 343.547L1083.94 342.736L1084.2 341.921L1085.14 340.029L1086.08 338.128L1087.69 336.843L1089.32 335.559L1093.01 334.093L1096.7 332.629L1097.25 332.73L1097.82 332.826L1098.51 333.283L1099.2 333.731L1099.81 334.359L1100.41 334.979L1100.7 335.581L1100.97 336.191L1101.24 337.063L1101.5 337.933L1102.09 338.477L1102.66 339.02L1103.46 339.31L1104.25 339.603L1105.15 339.714L1106.05 339.831L1107.23 339.31L1108.41 338.794L1109.22 337.423L1110.02 336.057L1110.72 334.359L1111.41 332.66L1112.29 331.146L1113.18 329.629L1114.24 328.468L1115.29 327.307L1115.69 326.684L1116.1 326.06L1116.41 325.192L1116.71 324.331L1117.26 323.656L1117.8 322.99L1118.71 322.956L1119.61 322.923L1121.37 323.371L1123.12 323.816L1124.55 323.624L1125.98 323.434L1127.41 322.767L1128.83 322.093L1131.4 320.171L1133.96 318.25L1135.61 316.822L1138.97 314.562L1141.38 314.257L1143.78 315.17L1154.4 322.144L1156.81 322.891ZM1004.98 413.425L1007.38 410.638L1011.22 407.451L1014.09 406.142L1013.31 405.405L1013.85 404.547L1013.08 403.483L1012.03 402.87L1013.19 401.044L1012.91 399.554L1010.11 397.916L1007.79 397.629L1006 396.482L1003.45 396.508L999.432 400.209L998.826 403.115L996.856 407.582L997.076 407.778L998.356 407.083L998.491 408.228L999.03 409.25L1000.92 411.212L1002.13 410.068L1002.2 410.437L1001.76 411.335L1002.7 412.887L1004.98 413.425Z" fill="#BFE2C8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path id="region13" d="M1097.85 396.362L1098.34 396.383L1100.92 395.479L1110.19 390.597L1112.77 390.24L1114.2 391.059L1115.47 392.625L1119.72 399.34L1120.44 401.217L1120.58 403.155L1119.46 408.795L1119.59 410.398L1120.53 411.65L1121.75 411.474L1123.22 410.829L1124.93 410.677L1126.38 411.231L1127.74 412.137L1128.98 413.303L1130.03 414.622L1131.41 415.821L1132.92 415.969L1136.17 415.519L1139.77 416.121L1141.46 416.832L1143.01 417.96L1144.39 418.666L1147.21 419.017L1148.43 419.917L1150.34 422.867L1151.53 423.606L1152.27 421.836L1152.12 419.912L1151.75 418.269L1151.95 416.999L1153.52 416.217L1155.32 416.355L1156.18 417.463L1157.11 420.916L1157.83 422.199L1158.8 423.146L1159.81 423.08L1160.62 421.323L1162.51 419.097L1167.69 423.185L1169.39 421.844L1169.79 418.661L1169.12 402.817L1169.59 401.648L1170.63 401.885L1174.27 405.014L1177.54 406.31L1180.12 405.846L1182.21 403.842L1184.73 398.853L1185.81 395.768L1186.14 393.932L1185.85 392.242L1183.73 389.734L1182.97 388.201V388.182L1182.96 388.172L1184.46 384.637L1185.38 383.617L1187.05 382.997L1188.71 383.231L1189.67 384.461L1190.07 386.252L1190.08 388.171L1188.68 393.344L1188.75 394.462L1189.47 394.704L1189.91 393.953L1190.23 392.949L1190.58 392.439L1191.39 392.748L1191.8 394.228L1192.51 394.528L1193.12 394.038L1193.17 392.097L1193.66 391.706L1194.29 391.943L1194.89 392.452L1201.99 402.157L1203.21 404.878L1203.64 407.907L1203.46 411.822L1203.85 415.687L1205.82 416.563L1211.83 415.62L1213.66 417.013L1214.82 418.525L1216.12 419.159L1218.38 417.913L1220.02 416.568L1221.78 415.511L1223.62 415.245L1225.56 416.292L1226.42 418.056L1226.78 420.553L1226.92 423.167L1227.61 427.951V429.744L1227.1 431.379L1226.06 433.557L1228.36 432.917L1227.92 434.403L1226.12 442.008L1225.54 442.501L1225.2 442.678L1224.75 442.863L1223.6 443.057L1219.06 443.227L1217.82 443.448L1216.49 443.312L1206.58 441.116L1204.5 441.297L1202.68 441.172H1201.03L1200.15 441.412L1196.99 442.793L1194.48 441.64L1186.65 443.554L1185.67 444.893L1184.72 445.521L1182.25 447.609L1181.93 448.133L1182 448.758L1182.91 449.853L1184.11 452.145L1181.92 454.108L1175.66 456.015L1168.95 459.356L1167.47 460.5L1165.09 463.849L1160.14 468.118L1158.4 468.433L1157.32 468.123L1153.89 466.407L1152.35 465.26L1151.51 464.974L1150.13 464.724L1149.34 464.493L1148.79 464.197L1146.64 462.147L1146.07 461.897L1143.11 461.596L1142.69 461.205L1147.5 455.197L1138.94 455.621L1136.53 455.309L1136.03 454.918L1135.43 454.527L1134.24 454.071L1132.71 454.063L1129.15 456.989L1128.15 457.116L1126.04 456.919L1125.02 456.989L1123.75 457.55L1122.91 458.386L1122.21 459.32L1121.4 460.157L1119.46 461.275L1119.63 460.514L1120.28 457.446L1117.39 455.911L1110.46 454.442L1109.28 453.039L1109.09 451.471L1109.81 450.316L1111.31 450.166L1113.95 452.262L1115.44 452.772L1115.59 451.085L1114.96 450.284L1101.16 436.006L1098.77 434.092L1098.53 433.823L1098.34 433.516L1096.89 432.06L1096.89 432.045L1097.44 429.934L1097.29 423.143L1096.94 421.126L1095.41 418.743L1093.89 416.872L1093.4 416.132L1093.24 415.515L1093.21 414.908L1093.35 414.354L1094.8 411.554L1095.02 410.983L1095.37 409.701L1095.1 408.966L1093.01 408.695L1092.75 408.365L1092.49 407.882L1092.47 406.464L1092.28 405.407L1092.39 404.736L1092.6 404.22L1096.3 399.7L1096.99 398.526L1097.85 396.362ZM1105.05 431.823L1103.83 432.111L1104.72 433.996L1104.79 434.071L1106.05 435.252L1108.27 437.986L1109.54 439.106L1111.04 439.428L1110.92 437.864L1109.94 435.659L1108.89 434.096L1107.14 432.644L1105.05 431.823Z" fill="#BFE2C8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -29,13 +28,13 @@ onMounted(()=>{
         <path id="region14" d="M1004.98 413.426L1002.7 412.886L1001.76 411.334L1002.19 410.435L1002.13 410.067L1000.91 411.211L999.028 409.248L998.489 408.226L998.354 407.081L997.074 407.776L996.854 407.581L998.824 403.114L999.43 400.208L1003.44 396.507L1006 396.481L1007.79 397.628L1010.11 397.914L1012.91 399.553L1013.19 401.043L1012.03 402.869L1013.07 403.482L1013.85 404.546L1013.31 405.404L1014.08 406.141L1011.22 407.45L1007.38 410.637L1004.98 413.426Z" fill="#BFE2C8"/>
       </g>
       <g id="tooltip_3">
-        <g id="Rectangle 7" filter="url(#filter1_d_0_1)">
+        <g id="Rectangle 7" filter="url(#filter1_d_52_41)">
           <rect x="681.571" y="158.749" width="352.429" height="83.7784" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
           <rect x="682.071" y="159.249" width="351.429" height="82.7784" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
         </g>
         <path id="Vector 1" d="M683 202H606V343" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Rectangle 8">
-          <g filter="url(#filter2_i_0_1)">
+          <g filter="url(#filter2_i_52_41)">
             <rect x="717.128" y="146" width="282.361" height="26.4084" rx="12" fill="#1FA2F4"/>
           </g>
           <rect x="717.628" y="146.5" width="281.361" height="25.4084" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -46,13 +45,13 @@ onMounted(()=>{
         <ellipse id="Ellipse 1" cx="606.229" cy="344.553" rx="5.22892" ry="4.55317" fill="#0091FF"/>
       </g>
       <g id="tooltip_1">
-        <g id="Rectangle 7_2" filter="url(#filter3_d_0_1)">
+        <g id="Rectangle 7_2" filter="url(#filter3_d_52_41)">
           <rect x="300.571" y="31.7485" width="352.429" height="83.7784" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
           <rect x="301.071" y="32.2485" width="351.429" height="82.7784" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
         </g>
         <path id="Vector 1_2" d="M302 75H225V203" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Rectangle 8_2">
-          <g filter="url(#filter4_i_0_1)">
+          <g filter="url(#filter4_i_52_41)">
             <rect x="336.128" y="19" width="282.361" height="26.4084" rx="12" fill="#1FA2F4"/>
           </g>
           <rect x="336.628" y="19.5" width="281.361" height="25.4084" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -63,13 +62,13 @@ onMounted(()=>{
         <ellipse id="Ellipse 1_2" cx="225.229" cy="202.553" rx="5.22892" ry="4.55317" fill="#0091FF"/>
       </g>
       <g id="tooltip_2">
-        <g id="Rectangle 7_3" filter="url(#filter5_d_0_1)">
+        <g id="Rectangle 7_3" filter="url(#filter5_d_52_41)">
           <rect x="422.571" y="209.749" width="352.429" height="83.7784" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
           <rect x="423.071" y="210.249" width="351.429" height="82.7784" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
         </g>
         <path id="Vector 1_3" d="M424 253H347V390" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Rectangle 8_3">
-          <g filter="url(#filter6_i_0_1)">
+          <g filter="url(#filter6_i_52_41)">
             <rect x="458.128" y="197" width="282.361" height="26.4084" rx="12" fill="#1FA2F4"/>
           </g>
           <rect x="458.628" y="197.5" width="281.361" height="25.4084" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -80,13 +79,13 @@ onMounted(()=>{
         <ellipse id="Ellipse 1_3" cx="347.229" cy="389.553" rx="5.22892" ry="4.55317" fill="#0091FF"/>
       </g>
       <g id="tooltip_4">
-        <g id="Rectangle 7_4" filter="url(#filter7_d_0_1)">
+        <g id="Rectangle 7_4" filter="url(#filter7_d_52_41)">
           <rect x="646.571" y="359.749" width="352.429" height="83.7784" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
           <rect x="647.071" y="360.249" width="351.429" height="82.7784" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
         </g>
         <path id="Vector 1_4" d="M648 403H571V509" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Rectangle 8_4">
-          <g filter="url(#filter8_i_0_1)">
+          <g filter="url(#filter8_i_52_41)">
             <rect x="682.128" y="347" width="282.361" height="26.4084" rx="12" fill="#1FA2F4"/>
           </g>
           <rect x="682.628" y="347.5" width="281.361" height="25.4084" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -99,12 +98,12 @@ onMounted(()=>{
       <g id="tooltip_7">
         <path id="Vector 1_5" d="M699 522H775V649" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Group 2">
-          <g id="Rectangle 7_5" filter="url(#filter9_d_0_1)">
+          <g id="Rectangle 7_5" filter="url(#filter9_d_52_41)">
             <rect x="347" y="476.749" width="352.429" height="83.7784" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
             <rect x="347.5" y="477.249" width="351.429" height="82.7784" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
           </g>
           <g id="Rectangle 8_5">
-            <g filter="url(#filter10_i_0_1)">
+            <g filter="url(#filter10_i_52_41)">
               <rect x="382.557" y="464" width="282.361" height="26.4084" rx="12" fill="#1FA2F4"/>
             </g>
             <rect x="383.057" y="464.5" width="281.361" height="25.4084" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -118,12 +117,12 @@ onMounted(()=>{
       <g id="tooltip_5">
         <path id="Vector 1_6" d="M720 290H797.388V533.595" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Group 3">
-          <g id="Rectangle 7_6" filter="url(#filter11_d_0_1)">
+          <g id="Rectangle 7_6" filter="url(#filter11_d_52_41)">
             <rect x="368" y="246.749" width="352.429" height="83.7784" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
             <rect x="368.5" y="247.249" width="351.429" height="82.7784" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
           </g>
           <g id="Rectangle 8_6">
-            <g filter="url(#filter12_i_0_1)">
+            <g filter="url(#filter12_i_52_41)">
               <rect x="403.557" y="234" width="282.361" height="26.4084" rx="12" fill="#1FA2F4"/>
             </g>
             <rect x="404.057" y="234.5" width="281.361" height="25.4084" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -137,12 +136,12 @@ onMounted(()=>{
       <g id="tooltip_8">
         <path id="Vector 1_7" d="M801 465H878.388V708.595" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Group 4">
-          <g id="Rectangle 7_7" filter="url(#filter13_d_0_1)">
+          <g id="Rectangle 7_7" filter="url(#filter13_d_52_41)">
             <rect x="449" y="424.749" width="352.429" height="83.7784" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
             <rect x="449.5" y="425.249" width="351.429" height="82.7784" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
           </g>
           <g id="Rectangle 8_7">
-            <g filter="url(#filter14_i_0_1)">
+            <g filter="url(#filter14_i_52_41)">
               <rect x="484.557" y="412" width="282.361" height="26.4084" rx="12" fill="#1FA2F4"/>
             </g>
             <rect x="485.057" y="412.5" width="281.361" height="25.4084" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -156,12 +155,12 @@ onMounted(()=>{
       <g id="tooltip_6">
         <path id="Vector 1_8" d="M790 239H879V483" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Group 5">
-          <g id="Rectangle 7_8" filter="url(#filter15_d_0_1)">
+          <g id="Rectangle 7_8" filter="url(#filter15_d_52_41)">
             <rect x="438" y="191.749" width="352.429" height="83.7784" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
             <rect x="438.5" y="192.249" width="351.429" height="82.7784" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
           </g>
           <g id="Rectangle 8_8">
-            <g filter="url(#filter16_i_0_1)">
+            <g filter="url(#filter16_i_52_41)">
               <rect x="473.557" y="179" width="282.361" height="26.4084" rx="12" fill="#1FA2F4"/>
             </g>
             <rect x="474.057" y="179.5" width="281.361" height="25.4084" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -175,12 +174,12 @@ onMounted(()=>{
       <g id="tooltip_12">
         <path id="Vector 1_9" d="M885 235H962.388V478.595" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Group 6">
-          <g id="Rectangle 7_9" filter="url(#filter17_d_0_1)">
+          <g id="Rectangle 7_9" filter="url(#filter17_d_52_41)">
             <rect x="533" y="193.749" width="352.429" height="83.7784" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
             <rect x="533.5" y="194.249" width="351.429" height="82.7784" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
           </g>
           <g id="Rectangle 8_9">
-            <g filter="url(#filter18_i_0_1)">
+            <g filter="url(#filter18_i_52_41)">
               <rect x="568.557" y="181" width="282.361" height="26.4084" rx="12" fill="#1FA2F4"/>
             </g>
             <rect x="569.057" y="181.5" width="281.361" height="25.4084" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -194,12 +193,12 @@ onMounted(()=>{
       <g id="tooltip_9">
         <path id="Vector 1_10" d="M952 179H1029.39V422.595" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Group 7">
-          <g id="Rectangle 7_10" filter="url(#filter19_d_0_1)">
+          <g id="Rectangle 7_10" filter="url(#filter19_d_52_41)">
             <rect x="600" y="133.749" width="352.429" height="83.7784" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
             <rect x="600.5" y="134.249" width="351.429" height="82.7784" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
           </g>
           <g id="Rectangle 8_10">
-            <g filter="url(#filter20_i_0_1)">
+            <g filter="url(#filter20_i_52_41)">
               <rect x="635.557" y="121" width="282.361" height="26.4084" rx="12" fill="#1FA2F4"/>
             </g>
             <rect x="636.057" y="121.5" width="281.361" height="25.4084" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -213,12 +212,12 @@ onMounted(()=>{
       <g id="tooltip_13">
         <path id="Vector 1_11" d="M1080 333H1157V438.262" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Group 8">
-          <g id="Rectangle 7_11" filter="url(#filter21_d_0_1)">
+          <g id="Rectangle 7_11" filter="url(#filter21_d_52_41)">
             <rect x="728" y="286.903" width="352.429" height="84.7952" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
             <rect x="728.5" y="287.403" width="351.429" height="83.7952" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
           </g>
           <g id="Rectangle 8_11">
-            <g filter="url(#filter22_i_0_1)">
+            <g filter="url(#filter22_i_52_41)">
               <rect x="763.557" y="274" width="282.361" height="26.7289" rx="12" fill="#1FA2F4"/>
             </g>
             <rect x="764.057" y="274.5" width="281.361" height="25.7289" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -232,12 +231,12 @@ onMounted(()=>{
       <g id="tooltip_14">
         <path id="Vector 1_12" d="M929 299H1006V404.262" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Group 8_2">
-          <g id="Rectangle 7_12" filter="url(#filter23_d_0_1)">
+          <g id="Rectangle 7_12" filter="url(#filter23_d_52_41)">
             <rect x="577" y="252.903" width="352.429" height="84.7952" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
             <rect x="577.5" y="253.403" width="351.429" height="83.7952" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
           </g>
           <g id="Rectangle 8_12">
-            <g filter="url(#filter24_i_0_1)">
+            <g filter="url(#filter24_i_52_41)">
               <rect x="612.557" y="240" width="282.361" height="26.7289" rx="12" fill="#1FA2F4"/>
             </g>
             <rect x="613.057" y="240.5" width="281.361" height="25.7289" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -246,17 +245,17 @@ onMounted(()=>{
           <text id="Shaharlar soni: 204_12" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="671.12" y="293.52">Shaharlar soni: 204</tspan></text>
           <text id="Qishloqlar soni: 507_12" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="671.12" y="317.483">Qishloqlar soni: 507</tspan></text>
         </g>
-        <ellipse id="Ellipse 1_12" cx="1005.23" cy="404.608" rx="5.22892" ry="4.60844" fill="#0091FF"/>
+        <ellipse id="Ellipse 1_12" cx="1006.5" cy="405" rx="2.5" ry="2" fill="#0091FF"/>
       </g>
       <g id="tooltip_11">
         <path id="Vector 1_13" d="M1112 208H1238V456" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Group 9">
-          <g id="Rectangle 7_13" filter="url(#filter25_d_0_1)">
+          <g id="Rectangle 7_13" filter="url(#filter25_d_52_41)">
             <rect x="760" y="161.903" width="352.429" height="84.7952" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
             <rect x="760.5" y="162.403" width="351.429" height="83.7952" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
           </g>
           <g id="Rectangle 8_13">
-            <g filter="url(#filter26_i_0_1)">
+            <g filter="url(#filter26_i_52_41)">
               <rect x="795.557" y="149" width="282.361" height="26.7289" rx="12" fill="#1FA2F4"/>
             </g>
             <rect x="796.057" y="149.5" width="281.361" height="25.7289" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -270,12 +269,12 @@ onMounted(()=>{
       <g id="tooltip_10">
         <path id="Vector 1_14" d="M1048 249H1165V485" stroke="#0091FF" stroke-opacity="0.76" stroke-width="2" stroke-dasharray="4 4"/>
         <g id="Group 10">
-          <g id="Rectangle 7_14" filter="url(#filter27_d_0_1)">
+          <g id="Rectangle 7_14" filter="url(#filter27_d_52_41)">
             <rect x="696" y="203.903" width="352.429" height="84.7952" rx="12" fill="#0091FF" fill-opacity="0.76" shape-rendering="crispEdges"/>
             <rect x="696.5" y="204.403" width="351.429" height="83.7952" rx="11.5" stroke="#0091FF" stroke-opacity="0.76" shape-rendering="crispEdges"/>
           </g>
           <g id="Rectangle 8_14">
-            <g filter="url(#filter28_i_0_1)">
+            <g filter="url(#filter28_i_52_41)">
               <rect x="731.557" y="191" width="282.361" height="26.7289" rx="12" fill="#1FA2F4"/>
             </g>
             <rect x="732.057" y="191.5" width="281.361" height="25.7289" rx="11.5" stroke="#0091FF" stroke-opacity="0.76"/>
@@ -288,26 +287,26 @@ onMounted(()=>{
       </g>
     </g>
     <defs>
-      <filter id="filter0_d_0_1" x="0" y="0" width="1309.49" height="775.901" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter0_d_52_41" x="0" y="0" width="1309.49" height="775.901" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dx="8" dy="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter1_d_0_1" x="677.571" y="158.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter1_d_52_41" x="677.571" y="158.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter2_i_0_1" x="717.128" y="146" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter2_i_52_41" x="717.128" y="146" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -315,19 +314,19 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
-      <filter id="filter3_d_0_1" x="296.571" y="31.7485" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter3_d_52_41" x="296.571" y="31.7485" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter4_i_0_1" x="336.128" y="19" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter4_i_52_41" x="336.128" y="19" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -335,19 +334,19 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
-      <filter id="filter5_d_0_1" x="418.571" y="209.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter5_d_52_41" x="418.571" y="209.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter6_i_0_1" x="458.128" y="197" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter6_i_52_41" x="458.128" y="197" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -355,19 +354,19 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
-      <filter id="filter7_d_0_1" x="642.571" y="359.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter7_d_52_41" x="642.571" y="359.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter8_i_0_1" x="682.128" y="347" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter8_i_52_41" x="682.128" y="347" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -375,19 +374,19 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
-      <filter id="filter9_d_0_1" x="343" y="476.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter9_d_52_41" x="343" y="476.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter10_i_0_1" x="382.557" y="464" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter10_i_52_41" x="382.557" y="464" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -395,19 +394,19 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
-      <filter id="filter11_d_0_1" x="364" y="246.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter11_d_52_41" x="364" y="246.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter12_i_0_1" x="403.557" y="234" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter12_i_52_41" x="403.557" y="234" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -415,19 +414,19 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
-      <filter id="filter13_d_0_1" x="445" y="424.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter13_d_52_41" x="445" y="424.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter14_i_0_1" x="484.557" y="412" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter14_i_52_41" x="484.557" y="412" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -435,19 +434,19 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
-      <filter id="filter15_d_0_1" x="434" y="191.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter15_d_52_41" x="434" y="191.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter16_i_0_1" x="473.557" y="179" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter16_i_52_41" x="473.557" y="179" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -455,19 +454,19 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
-      <filter id="filter17_d_0_1" x="529" y="193.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter17_d_52_41" x="529" y="193.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter18_i_0_1" x="568.557" y="181" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter18_i_52_41" x="568.557" y="181" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -475,19 +474,19 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
-      <filter id="filter19_d_0_1" x="596" y="133.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter19_d_52_41" x="596" y="133.749" width="360.429" height="91.7783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter20_i_0_1" x="635.557" y="121" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter20_i_52_41" x="635.557" y="121" width="282.361" height="30.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -495,19 +494,19 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
-      <filter id="filter21_d_0_1" x="724" y="286.903" width="360.429" height="92.7954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter21_d_52_41" x="724" y="286.903" width="360.429" height="92.7954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter22_i_0_1" x="763.557" y="274" width="282.361" height="30.729" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter22_i_52_41" x="763.557" y="274" width="282.361" height="30.729" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -515,19 +514,19 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
-      <filter id="filter23_d_0_1" x="573" y="252.903" width="360.429" height="92.7954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter23_d_52_41" x="573" y="252.903" width="360.429" height="92.7954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter24_i_0_1" x="612.557" y="240" width="282.361" height="30.729" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter24_i_52_41" x="612.557" y="240" width="282.361" height="30.729" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -535,19 +534,19 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
-      <filter id="filter25_d_0_1" x="756" y="161.903" width="360.429" height="92.7954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter25_d_52_41" x="756" y="161.903" width="360.429" height="92.7954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter26_i_0_1" x="795.557" y="149" width="282.361" height="30.729" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter26_i_52_41" x="795.557" y="149" width="282.361" height="30.729" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -555,19 +554,19 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
-      <filter id="filter27_d_0_1" x="692" y="203.903" width="360.429" height="92.7954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter27_d_52_41" x="692" y="203.903" width="360.429" height="92.7954" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="out"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_41"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_41" result="shape"/>
       </filter>
-      <filter id="filter28_i_0_1" x="731.557" y="191" width="282.361" height="30.729" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <filter id="filter28_i_52_41" x="731.557" y="191" width="282.361" height="30.729" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -575,7 +574,7 @@ onMounted(()=>{
         <feGaussianBlur stdDeviation="2"/>
         <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_52_41"/>
       </filter>
     </defs>
   </svg>
