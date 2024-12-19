@@ -18,6 +18,7 @@ import MapText from "@/pages/home/mapElement/MapText.vue"
 import NamanganRegion from "@/pages/home/mapElement/NamanganRegion.vue"
 import AndijonRegion from "@/pages/home/mapElement/AndijonRegion.vue"
 import FerganaRegion from "@/pages/home/mapElement/FerganaRegion.vue"
+import InfographicElement from "@/pages/home/mapElement/InfographicElement.vue"
 
 const store = usePresentationStore()
 </script>
@@ -26,37 +27,40 @@ const store = usePresentationStore()
 <div
     id="map_section"
     :class="[store.fullScreen && 'fixed top-0 bottom-0 left-0 right-0 z-50']"
-    class="w-full min-h-screen flex bg-surface-ground border border-surface-200 ">
-  <div class="w-[480px] min-h-full shadow bg-surface-section border border-surface-200 rounded-xl p-4">
-    <MapContent/>
-  </div>
-  <div style="width:calc(100% - 480px)" class="min-h-full map_section_effect relative">
-    <div style="width: calc(100% - 8px)" class="bg-white rounded-xl mx-1 border border-surface-100 p-1 shadow">
-      <n-tabs type="card" animated class="hidden-panel-tab" v-model:value="store.filterActiveTab">
-        <n-tab-pane v-for="(item ,idx) in mapFilterList" :key="idx" :name="item.id" :tab="item.name">
-          {{item.name}}
-        </n-tab-pane>
-      </n-tabs>
+    class="w-full min-h-screen flex bg-surface-ground ">
+  <div class="flex w-full max-w-[1920px] mx-auto">
+    <div class="w-[480px] min-h-full shadow bg-surface-section border border-surface-200 rounded-xl p-4">
+      <MapContent/>
     </div>
-    <div class="w-full flex justify-center items-center overflow-hidden" style="height: calc(100vh - 40px)">
-      <MapText/>
-      <Transition name="zoom" mode="out-in">
-        <MapElement v-if="store.activeState === 'uzbekistan'"/>
-        <KhorezmRegion v-else-if="store.activeState === 'khorezm'"/>
-        <TashkentCity v-else-if="store.activeState === 'tashkentcity'"/>
-        <TashkentRegion  v-else-if="store.activeState === 'tashkent'"/>
-        <NavoiyRegion v-else-if="store.activeState === 'navoiy'" />
-        <BuxoroRegion v-else-if="store.activeState === 'buxoro'" />
-        <Qoraqolpoq v-else-if="store.activeState === 'qoraqolpoq'" />
-        <SamarqandRegion v-else-if="store.activeState === 'samarqand'" />
-        <QashqadaryoRegion v-else-if="store.activeState === 'qashqadaryo'" />
-        <SurxandaryoRegion v-else-if="store.activeState === 'surxandaryo'" />
-        <JizzaxRegion v-else-if="store.activeState === 'jizzax'" />
-        <SirdaryoRegion v-else-if="store.activeState === 'sirdaryo'" />
-        <NamanganRegion v-else-if="store.activeState === 'namangan'" />
-        <AndijonRegion v-else-if="store.activeState === 'andijon'" />
-        <FerganaRegion v-else-if="store.activeState === 'fergana'" />
-      </Transition>
+    <div style="width:calc(100% - 480px)" class="min-h-full map_section_effect relative">
+      <div style="width: calc(100% - 8px)" class="bg-white rounded-xl mx-1 border border-surface-100 p-1 shadow">
+        <n-tabs type="card" animated class="hidden-panel-tab" v-model:value="store.filterActiveTab">
+          <n-tab-pane v-for="(item ,idx) in mapFilterList" :key="idx" :name="item.id" :tab="item.name">
+            {{item.name}}
+          </n-tab-pane>
+        </n-tabs>
+      </div>
+      <div class="w-full flex justify-center items-center overflow-hidden" style="height: calc(100vh - 40px)">
+        <MapText/>
+        <Transition name="zoom" mode="out-in">
+          <MapElement v-if="store.activeState === 'uzbekistan'"/>
+          <KhorezmRegion v-else-if="store.activeState === 'khorezm'"/>
+          <TashkentCity v-else-if="store.activeState === 'tashkentcity'"/>
+          <TashkentRegion  v-else-if="store.activeState === 'tashkent'"/>
+          <NavoiyRegion v-else-if="store.activeState === 'navoiy'" />
+          <BuxoroRegion v-else-if="store.activeState === 'buxoro'" />
+          <Qoraqolpoq v-else-if="store.activeState === 'qoraqolpoq'" />
+          <SamarqandRegion v-else-if="store.activeState === 'samarqand'" />
+          <QashqadaryoRegion v-else-if="store.activeState === 'qashqadaryo'" />
+          <SurxandaryoRegion v-else-if="store.activeState === 'surxandaryo'" />
+          <JizzaxRegion v-else-if="store.activeState === 'jizzax'" />
+          <SirdaryoRegion v-else-if="store.activeState === 'sirdaryo'" />
+          <NamanganRegion v-else-if="store.activeState === 'namangan'" />
+          <AndijonRegion v-else-if="store.activeState === 'andijon'" />
+          <FerganaRegion v-else-if="store.activeState === 'fergana'" />
+          <InfographicElement v-else-if="store.activeState === 'infoGraphic'" />
+        </Transition>
+      </div>
     </div>
   </div>
 </div>

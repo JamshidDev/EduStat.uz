@@ -9,6 +9,10 @@ const onChangeScreen = ()=>{
   store.fullScreen = !store.fullScreen
   document.body.style.overflow = store.fullScreen? 'hidden' : 'auto'
 }
+
+const onChange = ()=>{
+  store.changeState('infoGraphic')
+}
 </script>
 
 <template>
@@ -74,7 +78,7 @@ const onChangeScreen = ()=>{
      />
    </div>
    <div class="col-span-4">
-     <n-button icon-placement="right" class="w-full">
+     <n-button @click="onChange" icon-placement="right" class="w-full">
        Infografika
        <template #icon>
          <ChartMultiple20Regular/>

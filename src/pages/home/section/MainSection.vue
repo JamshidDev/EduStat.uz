@@ -6,7 +6,7 @@ import PersonStat from "@/pages/home/ui/PersonStat.vue"
 </script>
 
 <template>
-  <div style="height: calc(100vh - 100px)" class="w-full bg-[url('/public/imgs/main_section_bg.png')] bg-repeat-x relative bottom-effect">
+  <div style="height: calc(100vh - 100px)" class="w-full max-w-[1920px] mx-auto bg-[url('/public/imgs/main_section_bg.png')] bg-repeat-x relative bottom-effect">
     <span class="animation_1 w-[100px] h-[100px] rounded-full absolute top-[130px] left-[60px]" style="background: radial-gradient(circle, rgba(31,97,235,0.7) 0%, rgba(25,95,241,0.25) 100%);"></span>
     <StatText/>
     <StatElement

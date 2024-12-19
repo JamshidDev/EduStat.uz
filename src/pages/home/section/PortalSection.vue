@@ -5,8 +5,10 @@ import PortalBoard from "@/pages/home/ui/PortalBoard.vue"
 
 <template>
   <div class="w-full bg-[#F3F5FB] relative bg-effect-left px-20 py-[90px] min-h-[500px]">
-    <PortalHeader/>
-    <PortalBoard/>
+    <div class="w-full max-w-[1920px] mx-auto">
+      <PortalHeader/>
+      <PortalBoard/>
+    </div>
   </div>
 </template>
 

@@ -5,7 +5,7 @@ import Map from "@/components/yandexMap/Map.vue"
 
 <template>
 <div id="contact_section" class="w-full bg-[#071633] min-h-[300px] flex flex-col">
-<div class="grid grid-cols-12 xl:px-10 lg:px-10 md:px-5 px-0 py-10">
+<div class="grid grid-cols-12 xl:px-10 lg:px-10 md:px-5 px-0 py-10 w-full max-w-[1920px] mx-auto">
   <div class="xl:col-span-3 lg:col-span-3 md:col-span-6 col-span-12 px-4">
     <h6 class="text-lg text-white mb-10">Bog'lanish</h6>
     <div class="text-[#C9D2EE] flex gap-4 mb-2">
