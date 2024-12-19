@@ -1481,6 +1481,49 @@ export const usePresentationStore = defineStore("presentationStore", {
             },
         ],
         sidebarData:[],
+        portalData:[
+            {
+                title:"Ta'limga davlat harajatlari",
+                value:"161.3",
+                extension:"trln so'm"
+            },
+            {
+                title:"9-sinf bitiruvchilari",
+                value:"499 291",
+                extension:"nafar",
+            },
+            {
+                title:"11-sinf bitiruvchilari",
+                value:"387 001",
+                extension:"nafar",
+            },
+            {
+                title:"1-4 sinf o'quvchilari",
+                value:"15 900",
+                extension:"nafar",
+            },
+
+            {
+                title:"5-9 sinf o'quvchilari",
+                value:"3 089 600",
+                extension:"nafar"
+            },
+            {
+                title:"10-11 sinf o'quvchilari",
+                value:"899 400",
+                extension:"nafar"
+            },
+            {
+                title:"Ta'limdagi o'quvchi o'rinlari",
+                value:"6 530 863",
+                extension:"ta",
+            },
+            {
+                title:"O'quvchilar soni",
+                value:"6 645 119",
+                extension:"nafar",
+            },
+        ],
 
         filterActiveTab:1,
         fullScreen:false,

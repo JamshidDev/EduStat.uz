@@ -1,6 +1,11 @@
 <script setup>
 import {Location20Regular, Mail20Regular, Call28Regular, GlobeSearch20Filled, CircleSmall24Regular} from "@vicons/fluent"
 import Map from "@/components/yandexMap/Map.vue"
+const visitor = ref(0)
+
+onMounted(()=>{
+  visitor.value = Math.floor(Math.random() * 6) + 1
+})
 </script>
 
 <template>
@@ -105,6 +110,7 @@ import Map from "@/components/yandexMap/Map.vue"
   <div class="w-full border-t border-[#6a9cd25c] p-4 flex justify-center items-center">
     <span class="text-xs text-center text-[#C9D2EE] font-normal">Copyright © 2024. Materialdan to‘liq yoki qisman foydalanganda,   <a href="https://trm.uz" target="_blank" class="hover:text-primary cursor-pointer">trm.uz</a> manbasi ko‘rsatilishi shart.</span>
   </div>
+  <div class="text-[#C9D2EE] flex justify-center text-xs pb-2">Saytda mehmonlar soni: {{visitor}} ta</div>
 </div>
 </template>
 
