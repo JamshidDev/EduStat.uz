@@ -10,22 +10,22 @@ import PersonStat from "@/pages/home/ui/PersonStat.vue"
     <span class="animation_1 w-[100px] h-[100px] rounded-full absolute top-[130px] left-[60px]" style="background: radial-gradient(circle, rgba(31,97,235,0.7) 0%, rgba(25,95,241,0.25) 100%);"></span>
     <StatText/>
     <StatElement
-        :count="12456"
+        :count="18456"
         :description="`ta maktab binosi`"
         :number="'one'"
     />
     <StatElement
-        :count="12456"
+        :count="1456"
         :description="`ta oligoh binosi`"
         :number="'two'"
     />
     <StatElement
-        :count="12456"
+        :count="856"
         :description="`ta kollej binosi`"
         :number="'three'"
     />
     <StatElement
-        :count="12456"
+        :count="786"
         :description="`ta litsey binosi`"
         :number="'four'"
     />
