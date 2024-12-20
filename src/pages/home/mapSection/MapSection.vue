@@ -26,8 +26,8 @@ const store = usePresentationStore()
 <template>
 <div
     id="map_section"
-    :class="[store.fullScreen && 'fixed top-0 bottom-0 left-0 right-0 z-50 h-[100vh] pb-0']"
-    class="w-full  flex bg-surface-ground pb-20 h-[80vh]">
+    :class="[store.fullScreen? 'fixed top-0 bottom-0 left-0 right-0 z-50 h-[100vh] pb-0' : 'pb-20 h-[80vh]']"
+    class="w-full  flex bg-surface-ground">
   <div class="flex w-full max-w-[1920px] mx-auto" :class="[store.fullScreen? 'px-0':'px-20']">
     <div class="w-[480px] min-h-full bg-surface-section rounded-xl p-4">
       <MapContent/>
