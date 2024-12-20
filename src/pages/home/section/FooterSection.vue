@@ -1,6 +1,7 @@
 <script setup>
 import {Location20Regular, Mail20Regular, Call28Regular, GlobeSearch20Filled, CircleSmall24Regular} from "@vicons/fluent"
 import Map from "@/components/yandexMap/Map.vue"
+import LMap from "@/components/leafletMap/LMap.vue"
 const visitor = ref(0)
 
 onMounted(()=>{
@@ -99,7 +100,9 @@ onMounted(()=>{
   <div class="xl:col-span-4 lg:col-span-4 md:col-span-6 col-span-12 px-4">
     <h6 class="text-lg text-white mb-4">Xaritada joylashuv</h6>
     <div class="rounded">
-      <Map />
+<!--      <Map />-->
+      <LMap/>
+
     </div>
   </div>
 
