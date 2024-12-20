@@ -99,11 +99,7 @@ onMounted(()=>{
   </div>
   <div class="xl:col-span-4 lg:col-span-4 md:col-span-6 col-span-12 px-4">
     <h6 class="text-lg text-white mb-4">Xaritada joylashuv</h6>
-    <div class="rounded">
-<!--      <Map />-->
-      <LMap/>
-
-    </div>
+    <LMap/>
   </div>
 
 </div>

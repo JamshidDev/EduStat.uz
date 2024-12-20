@@ -21,15 +21,17 @@ const addMarker = ()=>{
 }
 
 
-onMounted(async ()=>{
-  initialMap()
-  addMarker()
-})
+// onMounted(async ()=>{
+//   initialMap()
+//   addMarker()
+// })
 </script>
 
 <template>
-  <div class="w-full h-[300px] overflow-hidden rounded-xl border-[2px] border-[#6a9cd25c]">
-    <div class="map__element w-full min-h-full" id="map_element"></div>
+  <div class="w-full h-[300px] overflow-hidden z-[1] rounded-xl border-[2px] border-[#6a9cd25c] relative">
+<!--    <div class="map__element w-full min-h-full" id="map_element"></div>-->
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af253b8b07b44514ba7b135e21b06bb09af406b777a8ee7bc529c217b7cc75473&amp;source=constructor" width="605" height="393" frameborder="0"></iframe>
   </div>
+
 
 </template>
