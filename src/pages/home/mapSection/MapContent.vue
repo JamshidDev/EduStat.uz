@@ -1,6 +1,7 @@
 <script setup>
-import {Search48Filled, Filter20Filled, BuildingBank28Regular, FullScreenMaximize16Regular, ChartMultiple20Regular, FullScreenMinimize24Regular} from "@vicons/fluent"
+import {Search48Filled, Filter20Filled, BuildingBank28Regular, FullScreenMaximize16Regular, ChartMultiple20Regular, FullScreenMinimize24Regular, DismissCircle20Regular} from "@vicons/fluent"
 import {regionList} from "@/utils/index.js"
+import Utils from "@/utils/Utils.js"
 const currentElement = ref(20)
 import {usePresentationStore} from "@/store/modules/index.js"
 const store = usePresentationStore()
@@ -11,9 +12,9 @@ const onChangeScreen = ()=>{
 }
 
 const onChange = ()=>{
-  store.changeState('infoGraphic')
-}
+  store.changeState(store.activeState === 'infoGraphic' ? 'uzbekistan' : 'infoGraphic')
 
+}
 onMounted(()=>{
   store.sidebarData = store.mapData[0].content
 })
@@ -63,7 +64,7 @@ onMounted(()=>{
               </n-icon>
             </div>
             <div style="width: calc(100% - 30px)" class="flex flex-col pl-2">
-              <span class="font-bold leading-[1]">{{item.value}}</span>
+              <span class="font-bold leading-[1]">{{Utils.numberFormat(item.value)}} </span>
               <span class="text-[#9CAFB7] text-xs leading-[1]">{{$t(item.title)}}</span>
             </div>
           </div>
@@ -82,10 +83,11 @@ onMounted(()=>{
      />
    </div>
    <div class="col-span-4">
-     <n-button @click="onChange" icon-placement="right" class="w-full">
+     <n-button :type="store.activeState === 'infoGraphic'? 'error' : 'default'" ghost @click="onChange" icon-placement="right" class="w-full">
        Infografika
        <template #icon>
-         <ChartMultiple20Regular/>
+         <DismissCircle20Regular v-if="store.activeState === 'infoGraphic'" />
+         <ChartMultiple20Regular v-else />
        </template>
      </n-button>
    </div>

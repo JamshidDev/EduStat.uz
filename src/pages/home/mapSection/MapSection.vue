@@ -33,14 +33,14 @@ const store = usePresentationStore()
       <MapContent/>
     </div>
     <div style="width:calc(100% - 480px)" class="min-h-full map_section_effect relative">
-      <div style="width: calc(100% - 8px)" class="bg-white rounded-xl mx-1 p-1">
+      <div style="width: calc(100% - 24px)" class="bg-white rounded-xl mx-3 p-1">
         <n-tabs type="card" animated class="hidden-panel-tab" v-model:value="store.filterActiveTab">
           <n-tab-pane v-for="(item ,idx) in mapFilterList" :key="idx" :name="item.id" :tab="item.name">
             {{item.name}}
           </n-tab-pane>
         </n-tabs>
       </div>
-      <div class="w-full flex justify-center overflow-hidden" style="height: calc(80vh - 40px)">
+      <div class="w-full flex justify-center items-center overflow-hidden" style="height: calc(80vh - 40px)">
         <MapText/>
         <Transition name="zoom" mode="out-in">
           <MapElement v-if="store.activeState === 'uzbekistan'"/>

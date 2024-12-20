@@ -1,13 +1,69 @@
-<script setup>
-
-</script>
-
 <template>
-<div class="w-full h-full z-10 p-4">
-  <h3>Infografika</h3>
-</div>
+  <div class="w-full min-h-full z-10 bg-surface-ground rounded-lg">
+    <p>Infografika</p>
+    <div class="grid grid-cols-12">
+      <div class="col-span-6 flex justify-center">
+        <v-chart class="chart" :option="option" autoresize />
+      </div>
+    </div>
+
+  </div>
 </template>
 
-<style scoped>
+<script setup>
+import { use } from 'echarts/core';
+import { CanvasRenderer } from 'echarts/renderers';
+import { PieChart, BarChart } from 'echarts/charts';
+import {
+  TitleComponent,
+  TooltipComponent,
+  LegendComponent,
+} from 'echarts/components';
+import VChart from 'vue-echarts';
+import { ref } from 'vue';
 
+use([
+  CanvasRenderer,
+  PieChart,
+  TitleComponent,
+  TooltipComponent,
+  LegendComponent,
+  BarChart,
+]);
+
+
+const option = ref({
+  tooltip: {
+    trigger: 'item',
+    formatter: '{a} <br/>{b} : {c} ({d}%)',
+  },
+  series: [
+    {
+      name: 'Traffic Sources',
+      type: 'pie',
+      radius: '55%',
+      center: ['50%', '60%'],
+      data: [
+        { value: 335, name: 'Direct' },
+        { value: 310, name: 'Email' },
+        { value: 234, name: 'Ad Networks' },
+        { value: 135, name: 'Video Ads' },
+        { value: 1548, name: 'Search Engines' },
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)',
+        },
+      },
+    },
+  ],
+});
+</script>
+
+<style scoped>
+.chart {
+  height: 200px;
+}
 </style>
