@@ -40,7 +40,9 @@ const store = usePresentationStore()
           </n-tab-pane>
         </n-tabs>
       </div>
-      <div class="w-full flex justify-center items-center overflow-hidden" style="height: calc(80vh - 40px)">
+      <div class="w-full flex justify-center items-center"
+           :class="store.activeState !== 'infoGraphic' && 'overflow-hidden'"
+           style="height: calc(80vh - 40px)">
         <MapText/>
         <Transition name="zoom" mode="out-in">
           <MapElement v-if="store.activeState === 'uzbekistan'"/>

@@ -5,7 +5,7 @@ import LMap from "@/components/leafletMap/LMap.vue"
 const visitor = ref(0)
 
 onMounted(()=>{
-  visitor.value = Math.floor(Math.random() * 6) + 1
+  visitor.value = Math.floor(Math.random() * 3) + 1
 })
 </script>
 
